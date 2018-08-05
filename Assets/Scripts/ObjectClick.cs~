@@ -1,0 +1,10 @@
+using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+
+public class ObjectClick : MonoBehaviour{
+    void OnMouseDown()
+    {
+        Debug.Log("You Cant Catch ME!!!");
+    }
+}

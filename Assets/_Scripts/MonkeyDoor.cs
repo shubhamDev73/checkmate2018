@@ -18,7 +18,7 @@ public class MonkeyDoor : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(col.gameObject.name == "Fake Camera" && Input.GetButtonDown("Click")){
+		if(!clicked && col.gameObject.name == "Fake Camera" && Input.GetButtonDown("Click")){
 			anim.SetBool("open", true);
 			clicked = true;
 			if(WinCheck(doorId)){

@@ -1,60 +1,59 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
+using System.Collections;
 using UnityEngine;
 using System;
 
 public class MazeGame : MonoBehaviour {
-    public float points; 
+    public float cost;
     public Vector2 blockDims;
     public GameObject player;
-    public float delta;
-
-    public Vector2 cost;
-    private Vector2 playerPostion;
-    private Vector2 lastPosition;
-    private float tempCostInY;
-    private float tempCostInX;
-    void Start (){
+    public Vector2 coefficents;
+    
+    private float lastCost;
+    private Vector2 lastPlateLocation;
+    private bool updateXMode;
+    private bool updateYMode; // Considers whether to update only in y or x
+    void Start()
+    {
+        updateXMode = false;
+        updateYMode = false;
+    }
+    void Update()
+    {
+        //Update the points
+        if(updateXMode)
+        {
+            cost = lastCost-coefficents.x*(transform.position.x - lastPlateLocation.x)/blockDims.x;
+        }
+        if(updateYMode)
+        {
+            cost = lastCost*(float)Math.Pow(coefficents.y,(transform.position.z - lastPlateLocation.y)/blockDims.y);
+        }
+    }
+    public void reached(Vector2 here)
+    {
+        if(updateXMode)
+            if(here.x > lastPlateLocation.x)
+                cost = lastCost-coefficents.x;
+            else
+                cost = lastCost+coefficents.x;
         
-        playerPostion = new Vector2((float)player.transform.position.x,(float)player.transform.position.z);
-        lastPosition = playerPostion;
-        tempCostInY = 0 ;
-        tempCostInX = 0 ; 
+        if(updateYMode)
+            if(here.y > lastPlateLocation.y)
+                cost = lastCost*coefficents.y;
+            else
+                cost = lastCost/coefficents.y;
+        
+        updateXMode = false;
+        updateYMode = false;
+        
     }
-    void Update(){
-        playerPostion = new Vector2((float)player.transform.position.x,(float)player.transform.position.z);
-        if((playerPostion-lastPosition).magnitude >=delta)
-        {
-            updateCost(playerPostion-lastPosition);
-            lastPosition = playerPostion;
-        }
-        Debug.Log(points);
+    public void changeMode(bool inX, bool inY, Vector2 fromHere)
+    {
+        this.updateXMode = inX;
+        this.updateYMode = inY;
+        lastPlateLocation = fromHere;
+        lastCost = cost;
     }
-    void updateCost(Vector2 diff){
-        tempCostInX += (diff.x);
-        if(Math.Abs(tempCostInX)>=blockDims.x){
-            points += (tempCostInX/blockDims.x)*cost.x;
-            if(tempCostInX>0)
-            {
-                tempCostInX -= blockDims.x;
-            }else
-            {
-                tempCostInX += blockDims.x;
-            }
-        }
-        tempCostInY += (diff.y);
-        if(Math.Abs(tempCostInY)>=blockDims.y)
-        {
-            points *=(float)Math.Pow(cost.y,tempCostInY/blockDims.y);
-            tempCostInY -= 0;
-            if(tempCostInY>0)
-            {
-                tempCostInY -= blockDims.y;
-            }else
-            {
-                tempCostInY += blockDims.y;
-            }
-        }
 
-    }
 }

@@ -17,7 +17,7 @@ public class Gate : MonoBehaviour {
 		if(col.gameObject.tag == "Player"){
 			gateLeft.SetBool("start", false);
 			gateRight.SetBool("start", false);
-			skeleton.transform.position = player.position - new Vector3(0.5f, player.position.y, 1 + 2.5f * Input.GetAxis("Vertical"));
+			skeleton.transform.position = player.position + new Vector3(0.5f + 0.5f * Input.GetAxis("Horizontal"), -player.position.y, 2 + 1 * Input.GetAxis("Vertical"));
 			skeleton.SetBool("start", true);
 			StartCoroutine("ShowInstructions");
 			Destroy(GetComponent("Collider"));
@@ -25,7 +25,7 @@ public class Gate : MonoBehaviour {
 	}
 
 	IEnumerator ShowInstructions () {
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.25f);
 		FindObjectOfType<UI>().Display(0);
 	}
 

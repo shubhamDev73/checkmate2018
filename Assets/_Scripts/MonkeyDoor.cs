@@ -6,7 +6,6 @@ public class MonkeyDoor : MonoBehaviour {
 	public int doorId;
 	public Animator anim;
 	public GameObject skeletonPrefab;
-	public Transform player;
 
 	private static bool[] monkeyIsIn = {true, true, true, true, true, true};
 	private static int size = 6;
@@ -21,13 +20,13 @@ public class MonkeyDoor : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(!GameManager.solved[1] && !clicked && col.gameObject == player.gameObject && Input.GetButtonDown("Click")){
+		if(!GameManager.solved[1] && !clicked && col.gameObject.tag == "Player" && Input.GetButtonDown("Click")){
 			anim.SetBool("open", true);
 			clicked = true;
 			if(WinCheck(doorId)){
 				GameManager.solved[1] = true;
 				GameManager.score += Mathf.Clamp(50 - tries, 0, 50);
-				StartCoroutine("SpawnSkeleton");
+				StartCoroutine(SpawnSkeleton(col.transform.position));
 				monkeyIsIn[doorId] = false;
 			}
 		}
@@ -78,10 +77,10 @@ public class MonkeyDoor : MonoBehaviour {
 		monkeyIsIn = temp;
 	}
 
-	IEnumerator SpawnSkeleton () {
+	IEnumerator SpawnSkeleton (Vector3 position) {
 		yield return new WaitForSeconds(0.5f);
 		GameObject skeleton = Instantiate(skeletonPrefab);
-		skeleton.transform.position = new Vector3(player.position.x, -0.25f, transform.position.z + 2);
+		skeleton.transform.position = new Vector3(position.x, -0.25f, transform.position.z - 2);
 		Destroy(skeleton, 0.5f);
 	}
 

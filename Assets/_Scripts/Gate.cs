@@ -5,6 +5,7 @@ public class Gate : MonoBehaviour {
 
 	public Animator gateLeft, gateRight, skeleton;
 	public Transform player;
+	public AudioSource bgm;
 
 	void OnTriggerEnter (Collider col) {
 		if(col.gameObject.tag == "Player"){
@@ -19,6 +20,7 @@ public class Gate : MonoBehaviour {
 			// gateRight.SetBool("start", false);
 			skeleton.transform.position = player.position + new Vector3(0.5f + 0.5f * Input.GetAxis("Horizontal"), -player.position.y, 2 + 1 * Input.GetAxis("Vertical"));
 			skeleton.SetBool("start", true);
+			bgm.Play();
 			StartCoroutine("ShowInstructions");
 			Destroy(GetComponent("Collider"));
 		}

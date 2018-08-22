@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class LightSwitch : MonoBehaviour {
 
@@ -7,22 +8,39 @@ public class LightSwitch : MonoBehaviour {
 	public static int tries = 0;
 
 	private float initIntensity;
+	private new Light light;
+	private GameObject bulb;
 
-	void Start () {
+	void Awake () {
 		for(int i=0;i<room.lights.Length;i++){
-			Renderer temp = room.lights[i];
+			Transform temp = room.lights[i];
 			int random = Random.Range(0, room.lights.Length);
 			room.lights[i] = room.lights[random];
 			room.lights[random] = temp;
 		}
 	}
 
+	void Start () {
+		light = room.lights[id].GetChild(0).GetComponent<Light>();
+		initIntensity = light.intensity;
+		light.intensity = 0;
+		bulb = room.lights[id].GetChild(1).gameObject;
+		bulb.SetActive(false);
+	}
+
 	void OnTriggerStay (Collider col) {
-		if(col.gameObject.tag == "Player" && Input.GetButtonDown("Click")){
-			if(room.lights[id].material.color == Color.black)
-				room.lights[id].material.color = Color.white;
-			else
-				room.lights[id].material.color = Color.black;
+		if(col.gameObject.CompareTag("Player") && Input.GetButtonDown("Click")){
+			light.intensity = initIntensity - light.intensity;
+			bulb.SetActive(!bulb.activeSelf);
+			StartCoroutine("RotateHandle");
+		}
+	}
+
+	IEnumerator RotateHandle () {
+		int dir = (int)((light.intensity / initIntensity - 0.5f) * 2);
+		while((dir == -1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 70) > 0.1f) || (dir == 1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 290) > 0.1f )){
+			transform.GetChild(0).Rotate(transform.GetChild(0).forward * -dir * 5);
+			yield return null;
 		}
 	}
 

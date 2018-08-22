@@ -2,7 +2,7 @@
 
 public class LightRoom : MonoBehaviour {
 
-	public Renderer[] lights;
+	public Transform[] lights;
 
 	void OnTriggerEnter (Collider col) {
 		LightSwitch.tries++;

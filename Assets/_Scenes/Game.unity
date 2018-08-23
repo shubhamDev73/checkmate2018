@@ -6784,11 +6784,6 @@ Prefab:
       propertyPath: m_Name
       value: Lever3 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114193810514413834, guid: 77cfe4be67c6a11438d1423d5803fd2d,
-        type: 2}
-      propertyPath: id
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77cfe4be67c6a11438d1423d5803fd2d, type: 2}
   m_IsPrefabParent: 0

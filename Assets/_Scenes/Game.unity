@@ -4196,7 +4196,7 @@ MonoBehaviour:
   startPoint: {fileID: 572554617}
   score: {fileID: 546847941}
   time: {fileID: 600099902}
-  gameText: {fileID: 1306962900}
+  instructionsText: {fileID: 1306962900}
   gameElementsText: {fileID: 1301287438}
   skeleton: {fileID: 772591287}
   okButton: {fileID: 9680303}

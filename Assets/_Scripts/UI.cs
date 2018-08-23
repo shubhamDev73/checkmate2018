@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class UI : MonoBehaviour {
 
 	public Transform cam, startPoint;
-	public Text score, time, gameText, gameElementsText;
+	public Text score, time, instructionsText, gameElementsText;
 	public GameObject skeleton, okButton;
 
 	private bool move = false;
@@ -30,7 +30,7 @@ public class UI : MonoBehaviour {
 
 	public void Display (int game) {
 		transform.GetChild(2).gameObject.SetActive(true);
-		gameText.text = allTexts[game];
+		instructionsText.text = allTexts[game];
 		Cursor.visible = true;
 		Time.timeScale = 0;
 		FindObjectOfType<EventSystem>().SetSelectedGameObject(okButton);

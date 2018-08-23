@@ -25,7 +25,7 @@ public class LightRoom : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col) {
-		if(col.CompareTag("Player") && !GameManager.solved[3])
+		if(!GameManager.solved[3] && col.CompareTag("Player"))
 			tries++;
 	}
 

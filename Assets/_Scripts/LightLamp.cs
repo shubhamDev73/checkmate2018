@@ -11,7 +11,7 @@ public class LightLamp : MonoBehaviour {
 	private bool canIncrement = false;
 
 	void Update () {
-		if(!canIncrement) return;
+		if(GameManager.solved[3] || !canIncrement) return;
 		if(Input.GetButtonDown("Increment")) settingId++;
 		if(Input.GetButtonDown("Decrement")) settingId--;
 		if(settingId <= 0) settingId += 15;
@@ -19,19 +19,19 @@ public class LightLamp : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col) {
-		if(col.CompareTag("Player"))
+		if(!GameManager.solved[3] && col.CompareTag("Player"))
 			canIncrement = true;
 	}
 
 	void OnTriggerExit (Collider col) {
-		if(col.CompareTag("Player")){
+		if(!GameManager.solved[3] && col.CompareTag("Player")){
 			canIncrement = false;
 			FindObjectOfType<UI>().DisplayText(0);
 		}
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(col.CompareTag("Player")){
+		if(!GameManager.solved[3] && col.CompareTag("Player")){
 			FindObjectOfType<UI>().DisplayText(settingId);
 			if(Input.GetButtonDown("Click")){
 				transform.GetChild(2).GetComponent<Renderer>().materials[1].SetTexture("_MainTex", Resources.Load<Texture2D>("Label3_" + settingId.ToString()));

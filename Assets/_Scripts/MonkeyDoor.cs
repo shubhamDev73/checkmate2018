@@ -33,7 +33,7 @@ public class MonkeyDoor : MonoBehaviour {
 	}
 
 	void OnTriggerExit (Collider col) {
-		if(col.CompareTag("Player") && clicked){
+		if(!GameManager.solved[1] && col.CompareTag("Player") && clicked){
 			anim.SetBool("open", false);
 			MonkeyUpdate(doorId);
 			clicked = false;

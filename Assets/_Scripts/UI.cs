@@ -1,12 +1,13 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class UI : MonoBehaviour {
 
 	public Transform cam, startPoint;
-	public Text score, time, gameText;
-	public GameObject skeleton;
+	public Text score, time, gameText, gameElementsText;
+	public GameObject skeleton, okButton;
 
 	private bool move = false;
 	private String[] allTexts = new String[6];
@@ -32,6 +33,7 @@ public class UI : MonoBehaviour {
 		gameText.text = allTexts[game];
 		Cursor.visible = true;
 		Time.timeScale = 0;
+		FindObjectOfType<EventSystem>().SetSelectedGameObject(okButton);
 	}
 
 	public void OK() {
@@ -39,6 +41,13 @@ public class UI : MonoBehaviour {
 		Cursor.visible = false;
 		Time.timeScale = 1;
 		if(skeleton) skeleton.SetActive(false);
+	}
+
+	public void DisplayText (int n) {
+		if(n == 0)
+			gameElementsText.text = "";
+		else
+			gameElementsText.text = n.ToString();
 	}
 
 	void Update () {
@@ -49,6 +58,7 @@ public class UI : MonoBehaviour {
 			cam.position = startPoint.position;
 			Cursor.visible = false;
 			Time.timeScale = 1;
+			DisplayText(0);
 			transform.GetChild(1).gameObject.SetActive(true);
 			move = false;
 		}

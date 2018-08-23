@@ -24,10 +24,10 @@ public class MonkeyDoor : MonoBehaviour {
 			anim.SetBool("open", true);
 			clicked = true;
 			if(WinCheck(doorId)){
+				monkeyIsIn[doorId] = false;
 				GameManager.solved[1] = true;
 				GameManager.score += Mathf.Clamp(50 - tries, 0, 50);
 				StartCoroutine(SpawnSkeleton(col.transform.position));
-				monkeyIsIn[doorId] = false;
 			}
 		}
 	}

@@ -3,7 +3,7 @@
 public class GameManager : MonoBehaviour {
 
 	public static int score;
-	public static bool[] solved = {false, false, false, false, false};
+	public static bool[] solved = {false, false, false, false, false, false}; // 0 is placeholder
 
 	void Start () {
 		score = 0;

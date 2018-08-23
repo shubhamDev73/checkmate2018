@@ -6,22 +6,43 @@ public class Balance : MonoBehaviour {
 
 	private int moveCoins = 1;
 	private int chance = 1;
+	private bool canIncrement = false;
+
+	void Update () {
+		if(!canIncrement) return;
+		if(Input.GetButtonDown("Increment")) moveCoins++;
+		if(Input.GetButtonDown("Decrement")) moveCoins--;
+		moveCoins = Mathf.Clamp(moveCoins, 1, 4);
+	}
+
+	void OnTriggerEnter (Collider col) {
+		if(col.CompareTag("Player"))
+			canIncrement = true;
+	}
+
+	void OnTriggerExit (Collider col) {
+		if(col.CompareTag("Player")){
+			canIncrement = false;
+			FindObjectOfType<UI>().DisplayText(0);
+		}
+	}
+
 
 	void OnTriggerStay (Collider col) {
 		if(col.CompareTag("Player")){
-			moveCoins += (int)Mathf.Round(Input.GetAxis("Mouse ScrollWheel"));
-			moveCoins = Mathf.Clamp(moveCoins, 1, 4);
+			FindObjectOfType<UI>().DisplayText(moveCoins);
 			if(Input.GetButtonDown("Click") && chance == 1){
 				coins -= moveCoins;
-				chance = 0;
+				Debug.Log(coins);
+				// chance = 0;
 			}
 		}
 	}
 
-	void Update () {
-		if(chance == 1)
-			return;
-		// AI bot
-	}
+	// void Update () {
+	// 	if(chance == 1)
+	// 		return;
+	// 	// AI bot
+	// }
 
 }

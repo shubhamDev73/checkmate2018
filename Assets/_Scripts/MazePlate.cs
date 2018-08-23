@@ -7,7 +7,7 @@ public class MazePlate : MonoBehaviour {
 	private static bool updateXMode = false, updateYMode = false; // Considers whether to update only in y or x
 
 	void OnTriggerEnter(Collider col) {
-		if(col.gameObject.tag == "Player"){
+		if(col.CompareTag("Player")){
 			//Make Wall
 			if(updateXMode)
 				if(Vector3.Dot((transform.position - lastPlateLocation).normalized, transform.right) == 1)
@@ -29,7 +29,7 @@ public class MazePlate : MonoBehaviour {
 	}
 
 	void OnTriggerExit (Collider col) {
-		if(col.gameObject.tag == "Player"){
+		if(col.CompareTag("Player")){
 			if(Mathf.Abs(Vector3.Dot((col.transform.position - transform.position).normalized, transform.right)) > Mathf.Abs(Vector3.Dot((col.transform.position - transform.position).normalized, transform.forward))){
 				updateXMode = true;
 				updateYMode = false;

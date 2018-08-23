@@ -8,7 +8,7 @@ public class Balance : MonoBehaviour {
 	private int chance = 1;
 
 	void OnTriggerStay (Collider col) {
-		if(col.gameObject.tag == "Player"){
+		if(col.CompareTag("Player")){
 			moveCoins += (int)Mathf.Round(Input.GetAxis("Mouse ScrollWheel"));
 			moveCoins = Mathf.Clamp(moveCoins, 1, 4);
 			if(Input.GetButtonDown("Click") && chance == 1){

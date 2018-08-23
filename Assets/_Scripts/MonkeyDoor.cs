@@ -20,7 +20,7 @@ public class MonkeyDoor : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(!GameManager.solved[1] && !clicked && col.gameObject.tag == "Player" && Input.GetButtonDown("Click")){
+		if(!GameManager.solved[1] && !clicked && col.CompareTag("Player") && Input.GetButtonDown("Click")){
 			anim.SetBool("open", true);
 			clicked = true;
 			if(WinCheck(doorId)){
@@ -33,7 +33,7 @@ public class MonkeyDoor : MonoBehaviour {
 	}
 
 	void OnTriggerExit (Collider col) {
-		if(clicked){
+		if(col.CompareTag("Player") && clicked){
 			anim.SetBool("open", false);
 			MonkeyUpdate(doorId);
 			clicked = false;

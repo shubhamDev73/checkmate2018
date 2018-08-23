@@ -38,7 +38,7 @@ public class LightSwitch : MonoBehaviour {
 
 	IEnumerator RotateHandle () {
 		int dir = (int)((light.intensity / initIntensity - 0.5f) * 2);
-		while((dir == -1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 70) > 0.1f) || (dir == 1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 290) > 0.1f )){
+		while((dir == 1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 70) > 0.1f) || (dir == -1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 290) > 0.1f )){
 			transform.GetChild(0).Rotate(transform.GetChild(0).forward * -dir * 5);
 			yield return null;
 		}

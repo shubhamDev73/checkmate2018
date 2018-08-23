@@ -27,6 +27,7 @@ public class LightSwitch : MonoBehaviour {
 		bulb = room.lights[id].GetChild(1).gameObject;
 		bulb.SetActive(false);
 		room.lights[id].GetComponent<LightLamp>().id = id;
+		transform.GetChild(1).GetComponent<Renderer>().materials[1].SetTexture("_MainTex", Resources.Load<Texture2D>("Label3_" + (id + 1).ToString()));
 	}
 
 	void OnTriggerStay (Collider col) {

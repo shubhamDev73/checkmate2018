@@ -33,8 +33,10 @@ public class LightLamp : MonoBehaviour {
 	void OnTriggerStay (Collider col) {
 		if(col.CompareTag("Player")){
 			FindObjectOfType<UI>().DisplayText(settingId);
-			if(Input.GetButtonDown("Click"))
-				correct = settingId == id;
+			if(Input.GetButtonDown("Click")){
+				transform.GetChild(2).GetComponent<Renderer>().materials[1].SetTexture("_MainTex", Resources.Load<Texture2D>("Label3_" + settingId.ToString()));
+				correct = settingId - 1 == id;
+			}
 		}
 	}
 

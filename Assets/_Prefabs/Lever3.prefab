@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4516982622778916}
   - component: {fileID: 33437765525245214}
   - component: {fileID: 23959359582740804}
+  - component: {fileID: 65890931958197832}
   m_Layer: 0
   m_Name: Stand3
   m_TagString: Untagged
@@ -263,6 +264,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944788049957014}
   m_Mesh: {fileID: 4300002, guid: 6648223e15c77c344bd00eee32975162, type: 3}
+--- !u!65 &65890931958197832
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544928035162540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18890148, y: 0.90681756, z: 0.308173}
+  m_Center: {x: 0, y: 0.45340878, z: 0.012215801}
 --- !u!65 &65908358899976580
 BoxCollider:
   m_ObjectHideFlags: 1

@@ -10,6 +10,7 @@ public class LightSwitch : MonoBehaviour {
 	private float initIntensity;
 	private new Light light;
 	private GameObject bulb;
+	private bool rotated = true;
 
 	void Awake () {
 		for(int i=0;i<room.lights.Length;i++){
@@ -29,7 +30,7 @@ public class LightSwitch : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(col.gameObject.CompareTag("Player") && Input.GetButtonDown("Click")){
+		if(col.CompareTag("Player") && rotated && Input.GetButton("Click")){
 			light.intensity = initIntensity - light.intensity;
 			bulb.SetActive(!bulb.activeSelf);
 			StartCoroutine("RotateHandle");
@@ -37,11 +38,13 @@ public class LightSwitch : MonoBehaviour {
 	}
 
 	IEnumerator RotateHandle () {
+		rotated = false;
 		int dir = (int)((light.intensity / initIntensity - 0.5f) * 2);
 		while((dir == 1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 70) > 0.1f) || (dir == -1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 290) > 0.1f )){
 			transform.GetChild(0).Rotate(transform.GetChild(0).forward * -dir * 5);
 			yield return null;
 		}
+		rotated = true;
 	}
 
 }

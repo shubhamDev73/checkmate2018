@@ -7,6 +7,8 @@ ModelImporter:
     400000: //RootNode
     2100000: Balance4
     2100002: Wire4
+    2100004: Board4
+    2100006: Text4
     2300000: //RootNode
     3300000: //RootNode
     4300000: Scale4Right
@@ -16,6 +18,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Balance4
     second: {fileID: 2100000, guid: 105592e1c6a56ec4ea23dc22d91e78bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board4
+    second: {fileID: 2100000, guid: 2478a5f06e8ff914285d1693f68d91ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text4
+    second: {fileID: 2100000, guid: 68cb54a2af4195545a7bf0e6567497b7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

@@ -19,7 +19,7 @@ public class UI : MonoBehaviour {
 			allTexts[1] = "Behind these doors roams the skeleton of my murderer. You'll have to catch him. Guess which room can contain him, and if you are wrong, he moves to its adjacent room. Corner him and catch him!!";
 			allTexts[2] = "";
 			allTexts[3] = "Some lamps outside this room can be controlled by these levers. Match all the levers to their correct lamps to shed some light on my murder.";
-			allTexts[4] = "";
+			allTexts[4] = "Let's play a game!! There are 42 coins on the left side of this scale. Taking turns, we'll remove maximum 4 coins. Let's see who can balance the scale. As a newcomer, I'll give you a head start.";
 			allTexts[5] = "";
 	}
 

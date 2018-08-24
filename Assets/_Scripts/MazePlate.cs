@@ -48,6 +48,7 @@ public class MazePlate : MonoBehaviour {
 			}else{
 				updateXMode = false;
 				updateYMode = true;
+				rot = 90 - ((int)Mathf.Sign(Vector3.Dot((col.transform.position - transform.position).normalized, transform.forward)) * 90);
 			}
 			lastPlateLocation = transform.position;
 			lastCost = cost;

@@ -7,7 +7,7 @@ public class LightSwitch : MonoBehaviour {
 	public int id;
 
 	private float initIntensity;
-	private Light light;
+	private Light lamp;
 	private GameObject bulb;
 	private bool rotated = true;
 
@@ -21,9 +21,9 @@ public class LightSwitch : MonoBehaviour {
 	}
 
 	void Start () {
-		light = room.lights[id].GetChild(0).GetComponent<Light>();
-		initIntensity = light.intensity;
-		light.intensity = 0;
+		lamp = room.lights[id].GetChild(0).GetComponent<Light>();
+		initIntensity = lamp.intensity;
+		lamp.intensity = 0;
 		bulb = room.lights[id].GetChild(1).gameObject;
 		bulb.SetActive(false);
 		room.lights[id].GetComponent<LightLamp>().id = id;
@@ -32,7 +32,7 @@ public class LightSwitch : MonoBehaviour {
 
 	void OnTriggerStay (Collider col) {
 		if(!GameManager.solved[3] && col.CompareTag("Player") && rotated && Input.GetButtonDown("Click")){
-			light.intensity = initIntensity - light.intensity;
+			lamp.intensity = initIntensity - lamp.intensity;
 			bulb.SetActive(!bulb.activeSelf);
 			StartCoroutine("RotateHandle");
 		}
@@ -40,7 +40,7 @@ public class LightSwitch : MonoBehaviour {
 
 	IEnumerator RotateHandle () {
 		rotated = false;
-		int dir = (int)((light.intensity / initIntensity - 0.5f) * 2);
+		int dir = (int)((lamp.intensity / initIntensity - 0.5f) * 2);
 		while((dir == 1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 70) > 5f) || (dir == -1 && Mathf.Abs(transform.GetChild(0).eulerAngles.z - 290) > 5f)){
 			transform.GetChild(0).Rotate(transform.GetChild(0).forward * -dir * 8);
 			yield return new WaitForFixedUpdate();

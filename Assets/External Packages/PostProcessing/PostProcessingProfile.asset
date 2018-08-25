@@ -81,7 +81,7 @@ MonoBehaviour:
     m_Settings:
       shutterAngle: 45
       sampleCount: 32
-      frameBlending: 0.1
+      frameBlending: 0.5
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -120,8 +120,8 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 3
-        temperature: 0
+        postExposure: 3.5
+        temperature: 5
         tint: 0
         hueShift: 0
         saturation: 0.9

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MazePlate : MonoBehaviour {
+public class PathPlate : MonoBehaviour {
 
 	public GameObject wallPrefab;
 

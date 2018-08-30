@@ -17,10 +17,10 @@ public class UI : MonoBehaviour {
 			timer = 3600 * 2;
 			allTexts[0] = "On exactly this day, 200 years ago, I was brutally murdered here, right where you stand. But my murder still remains a mystery today. I won't let you leave this place until you solve my murder. Oh, and you have only 2 hours.\nHA HA HA HA...";
 			allTexts[1] = "Behind these doors roams the skeleton of my murderer. You'll have to catch him. Guess which room can contain him, and if you are wrong, he moves to its adjacent room. Corner him and catch him!!";
-			allTexts[2] = "";
+			allTexts[2] = "MiniGame2";
 			allTexts[3] = "Some lamps outside this room can be controlled by these levers. Match all the levers to their correct lamps to shed some light on my murder.";
 			allTexts[4] = "Let's play a game!! There are 42 coins on the left side of this scale. Taking turns, we'll remove maximum 4 coins. Let's see who can balance the scale. As a newcomer, I'll give you a head start.";
-			allTexts[5] = "";
+			allTexts[5] = "Move circle, evade from square and escape.";
 	}
 
 	public void Play () {
@@ -36,7 +36,7 @@ public class UI : MonoBehaviour {
 		FindObjectOfType<EventSystem>().SetSelectedGameObject(okButton);
 	}
 
-	public void OK() {
+	public void OK () {
 		transform.GetChild(2).gameObject.SetActive(false);
 		Cursor.visible = false;
 		Time.timeScale = 1;

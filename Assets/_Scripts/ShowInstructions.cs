@@ -7,7 +7,7 @@ public class ShowInstructions : MonoBehaviour {
 	private bool shown = false;
 
 	void OnTriggerStay (Collider col) {
-		if(col.gameObject.tag == "Player" && !GameManager.solved[miniGame - 1] && (!shown || Input.GetButton("Instructions"))){
+		if(!GameManager.solved[miniGame - 1] && col.CompareTag("Player") && (!shown || Input.GetButton("Instructions"))){
 			FindObjectOfType<UI>().Display(miniGame);
 			shown = true;
 		}

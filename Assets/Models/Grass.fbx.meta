@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: cca9b771f4ee497499b6fd33d6f03912
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Grass_Bermuda Grass.Long.000
+    100004: Grass_Bermuda Grass.Long.001
+    100006: Grass_Bermuda Grass.Long.002
+    100008: Grass_Bermuda Grass.Long.003
+    100010: Grass_Bermuda Grass.Long.004
+    100012: Grass_Bermuda Grass.Long.005
+    100014: Grass_Bermuda Grass.Long.006
+    100016: Grass_Bermuda Grass.Long.007
+    100018: Grass_Bermuda Grass.Long.008
+    100020: Grass_Bermuda Grass.Long.009
+    100022: Grass_Bermuda Grass.Long.010
+    100024: Grass_Bermuda Grass.Long.011
+    100026: Grass_Bermuda Grass.Long.012
+    100028: Grass_Bermuda Grass.Long.013
+    100030: Grass_Bermuda Grass.Long.014
+    100032: Grass_Bermuda Grass.Long.015
+    100034: Grass_Bermuda Grass.Long.016
+    100036: Grass_Bermuda Grass.Long.017
+    100038: Grass_Bermuda Grass.Long.018
+    100040: Grass_Bermuda Grass.Long.019
+    100042: Grass_Bermuda Grass.Long.020
+    400000: //RootNode
+    400002: Grass_Bermuda Grass.Long.000
+    400004: Grass_Bermuda Grass.Long.001
+    400006: Grass_Bermuda Grass.Long.002
+    400008: Grass_Bermuda Grass.Long.003
+    400010: Grass_Bermuda Grass.Long.004
+    400012: Grass_Bermuda Grass.Long.005
+    400014: Grass_Bermuda Grass.Long.006
+    400016: Grass_Bermuda Grass.Long.007
+    400018: Grass_Bermuda Grass.Long.008
+    400020: Grass_Bermuda Grass.Long.009
+    400022: Grass_Bermuda Grass.Long.010
+    400024: Grass_Bermuda Grass.Long.011
+    400026: Grass_Bermuda Grass.Long.012
+    400028: Grass_Bermuda Grass.Long.013
+    400030: Grass_Bermuda Grass.Long.014
+    400032: Grass_Bermuda Grass.Long.015
+    400034: Grass_Bermuda Grass.Long.016
+    400036: Grass_Bermuda Grass.Long.017
+    400038: Grass_Bermuda Grass.Long.018
+    400040: Grass_Bermuda Grass.Long.019
+    400042: Grass_Bermuda Grass.Long.020
+    2100000: Grass_Bermuda Grass.Long Stems
+    2100002: Grass_Bermuda Grass.Long Leaves
+    2300000: Grass_Bermuda Grass.Long.000
+    2300002: Grass_Bermuda Grass.Long.001
+    2300004: Grass_Bermuda Grass.Long.002
+    2300006: Grass_Bermuda Grass.Long.003
+    2300008: Grass_Bermuda Grass.Long.004
+    2300010: Grass_Bermuda Grass.Long.005
+    2300012: Grass_Bermuda Grass.Long.006
+    2300014: Grass_Bermuda Grass.Long.007
+    2300016: Grass_Bermuda Grass.Long.008
+    2300018: Grass_Bermuda Grass.Long.009
+    2300020: Grass_Bermuda Grass.Long.010
+    2300022: Grass_Bermuda Grass.Long.011
+    2300024: Grass_Bermuda Grass.Long.012
+    2300026: Grass_Bermuda Grass.Long.013
+    2300028: Grass_Bermuda Grass.Long.014
+    2300030: Grass_Bermuda Grass.Long.015
+    2300032: Grass_Bermuda Grass.Long.016
+    2300034: Grass_Bermuda Grass.Long.017
+    2300036: Grass_Bermuda Grass.Long.018
+    2300038: Grass_Bermuda Grass.Long.019
+    2300040: Grass_Bermuda Grass.Long.020
+    3300000: Grass_Bermuda Grass.Long.000
+    3300002: Grass_Bermuda Grass.Long.001
+    3300004: Grass_Bermuda Grass.Long.002
+    3300006: Grass_Bermuda Grass.Long.003
+    3300008: Grass_Bermuda Grass.Long.004
+    3300010: Grass_Bermuda Grass.Long.005
+    3300012: Grass_Bermuda Grass.Long.006
+    3300014: Grass_Bermuda Grass.Long.007
+    3300016: Grass_Bermuda Grass.Long.008
+    3300018: Grass_Bermuda Grass.Long.009
+    3300020: Grass_Bermuda Grass.Long.010
+    3300022: Grass_Bermuda Grass.Long.011
+    3300024: Grass_Bermuda Grass.Long.012
+    3300026: Grass_Bermuda Grass.Long.013
+    3300028: Grass_Bermuda Grass.Long.014
+    3300030: Grass_Bermuda Grass.Long.015
+    3300032: Grass_Bermuda Grass.Long.016
+    3300034: Grass_Bermuda Grass.Long.017
+    3300036: Grass_Bermuda Grass.Long.018
+    3300038: Grass_Bermuda Grass.Long.019
+    3300040: Grass_Bermuda Grass.Long.020
+    4300000: Grass_Bermuda Grass.Long.016
+    4300002: Grass_Bermuda Grass.Long.011
+    4300004: Grass_Bermuda Grass.Long.013
+    4300006: Grass_Bermuda Grass.Long.014
+    4300008: Grass_Bermuda Grass.Long.015
+    4300010: Grass_Bermuda Grass.Long.019
+    4300012: Grass_Bermuda Grass.Long.018
+    4300014: Grass_Bermuda Grass.Long.017
+    4300016: Grass_Bermuda Grass.Long.010
+    4300018: Grass_Bermuda Grass.Long.009
+    4300020: Grass_Bermuda Grass.Long.005
+    4300022: Grass_Bermuda Grass.Long.012
+    4300024: Grass_Bermuda Grass.Long.007
+    4300026: Grass_Bermuda Grass.Long.008
+    4300028: Grass_Bermuda Grass.Long.000
+    4300030: Grass_Bermuda Grass.Long.003
+    4300032: Grass_Bermuda Grass.Long.004
+    4300034: Grass_Bermuda Grass.Long.001
+    4300036: Grass_Bermuda Grass.Long.002
+    4300038: Grass_Bermuda Grass.Long.006
+    4300040: Grass_Bermuda Grass.Long.020
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Bermuda Grass.Long Leaves
+    second: {fileID: 2100000, guid: f6db69d8078341f44b0fcf461372f15e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Bermuda Grass.Long Stems
+    second: {fileID: 2100000, guid: f611934797554a243b5e6f1700387055, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

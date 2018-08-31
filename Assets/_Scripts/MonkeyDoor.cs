@@ -20,20 +20,20 @@ public class MonkeyDoor : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(!GameManager.solved[1] && !clicked && col.gameObject.tag == "Player" && Input.GetButtonDown("Click")){
+		if(!GameManager.solved[1] && !clicked && col.CompareTag("Player") && Input.GetButtonDown("Click")){
 			anim.SetBool("open", true);
 			clicked = true;
 			if(WinCheck(doorId)){
+				monkeyIsIn[doorId] = false;
 				GameManager.solved[1] = true;
 				GameManager.score += Mathf.Clamp(50 - tries, 0, 50);
 				StartCoroutine(SpawnSkeleton(col.transform.position));
-				monkeyIsIn[doorId] = false;
 			}
 		}
 	}
 
 	void OnTriggerExit (Collider col) {
-		if(clicked){
+		if(!GameManager.solved[1] && col.CompareTag("Player") && clicked){
 			anim.SetBool("open", false);
 			MonkeyUpdate(doorId);
 			clicked = false;

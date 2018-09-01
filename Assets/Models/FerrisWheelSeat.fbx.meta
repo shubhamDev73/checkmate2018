@@ -1,33 +1,20 @@
 fileFormatVersion: 2
-guid: e9bc8d59e0d43df468eee0ccc41ee67f
+guid: 308486b8d49d51f49be21fdf975150f5
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: FerrisWheelStand
-    100004: FerrisWheelWire
     400000: //RootNode
-    400002: FerrisWheelStand
-    400004: FerrisWheelWire
-    2100000: FerrisWheelStand
-    2100002: FerrisWheelWire
-    2300000: FerrisWheelStand
-    2300002: FerrisWheelWire
-    3300000: FerrisWheelStand
-    3300002: FerrisWheelWire
-    4300000: FerrisWheelStand
-    4300002: FerrisWheelWire
+    2100000: FerrisWheelSeat
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: FerrisWheelSeat
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelStand
-    second: {fileID: 2100000, guid: c5d31c588c184cb4ea4fd668b7522c62, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FerrisWheelWire
-    second: {fileID: 2100000, guid: eb05eb65a461f9741b3f015064482e6e, type: 2}
+      name: FerrisWheelSeat
+    second: {fileID: 2100000, guid: d5b2710a15f8dea42bb33bf446ac8feb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

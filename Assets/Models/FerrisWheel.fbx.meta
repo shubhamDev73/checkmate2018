@@ -1,48 +1,44 @@
 fileFormatVersion: 2
-guid: a2df77bb75b3534429618aafe13ee026
+guid: e9bc8d59e0d43df468eee0ccc41ee67f
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Empty
-    100002: //RootNode
-    100004: FerrisWheel5
-    100006: FerrisWheelSeat5
-    100008: FerrisWheelStand5
-    100010: FerrisWheelWire5
-    400000: Empty
-    400002: //RootNode
-    400004: FerrisWheel5
-    400006: FerrisWheelSeat5
-    400008: FerrisWheelStand5
-    400010: FerrisWheelWire5
-    2100000: FerrisWheelStand5
-    2100002: FerrisWheelWire5
-    2100004: FerrisWheelSeat5
-    2300000: FerrisWheelSeat5
-    2300002: FerrisWheelStand5
-    2300004: FerrisWheelWire5
-    3300000: FerrisWheelSeat5
-    3300002: FerrisWheelStand5
-    3300004: FerrisWheelWire5
-    4300000: FerrisWheelStand5
-    4300002: FerrisWheelWire5
-    4300004: FerrisWheelSeat5
+    100000: //RootNode
+    100002: FerrisWheelSeat
+    100004: FerrisWheelStand
+    100006: FerrisWheelWire
+    400000: //RootNode
+    400002: FerrisWheelSeat
+    400004: FerrisWheelStand
+    400006: FerrisWheelWire
+    2100000: FerrisWheelStand
+    2100002: FerrisWheelWire
+    2100004: FerrisWheelSeat
+    2300000: FerrisWheelSeat
+    2300002: FerrisWheelStand
+    2300004: FerrisWheelWire
+    3300000: FerrisWheelSeat
+    3300002: FerrisWheelStand
+    3300004: FerrisWheelWire
+    4300000: FerrisWheelStand
+    4300002: FerrisWheelWire
+    4300004: FerrisWheelSeat
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelSeat5
-    second: {fileID: 2100000, guid: 6922da343989be84cbd2f57cc42a5fa5, type: 2}
+      name: FerrisWheelSeat
+    second: {fileID: 2100000, guid: d5b2710a15f8dea42bb33bf446ac8feb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelStand5
-    second: {fileID: 2100000, guid: 9defeb4ec5f91274fbc4a0bea9051b1a, type: 2}
+      name: FerrisWheelStand
+    second: {fileID: 2100000, guid: c5d31c588c184cb4ea4fd668b7522c62, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelWire5
-    second: {fileID: 2100000, guid: 3f38e4bf326c14c43be7d289e725e217, type: 2}
+      name: FerrisWheelWire
+    second: {fileID: 2100000, guid: eb05eb65a461f9741b3f015064482e6e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

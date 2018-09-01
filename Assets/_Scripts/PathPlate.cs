@@ -8,6 +8,10 @@ public class PathPlate : MonoBehaviour {
 	private static Vector3 lastPlateLocation;
 	private static bool updateXMode = false, updateYMode = false; // Considers whether to update only in y or x
 
+    void Start()
+    {
+        cost = 4;
+    }
 	void OnTriggerEnter(Collider col) {
 		if(col.CompareTag("Player")){
 			int rot = 180;

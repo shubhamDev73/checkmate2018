@@ -2,28 +2,32 @@ using UnityEngine;
 
 public class Maze : MonoBehaviour {
 
-	public Transform player, monkey;
+	public Transform player, monkey, exitLocation;
 	public float speed;
 	public int maxMonkeyTurns;
     public bool isPlaying;
 	public bool pCanMoveRight, pCanMoveLeft, pCanMoveUp, pCanMoveDown, mCanMoveRight, mCanMoveLeft, mCanMoveUp, mCanMoveDown;
     public GameObject camera;
     public GameObject mainCamera;
+    public float sensitivity;
 	private bool chance;
+    private bool buttonChangedX , buttonChangedY;
 	private int monkeyTurnsLeft;
 	private Vector3 playerInit, monkeyInit;
 	void Start () {
 		chance = true;
-		pCanMoveRight = pCanMoveLeft = pCanMoveUp = pCanMoveDown = true;
-		mCanMoveRight = mCanMoveLeft = mCanMoveUp = mCanMoveDown = true;
+//		pCanMoveRight = pCanMoveLeft = pCanMoveUp = pCanMoveDown = true;
+//		mCanMoveRight = mCanMoveLeft = mCanMoveUp = mCanMoveDown = true;
 		playerInit = player.position;
 		monkeyInit = monkey.position;
 		monkeyTurnsLeft = maxMonkeyTurns;
+        buttonChangedX = buttonChangedY = true;
 	}
 
     void OnTriggerEnter(Collider col)
     {
         if(col.CompareTag("Player")){
+            Debug.Log("Trigger Entered");
             setIsPlaying(true);
         }
     }
@@ -39,8 +43,10 @@ public class Maze : MonoBehaviour {
         }
         else
         {
+            Debug.Log("Exited");
             camera.SetActive(false);
             mainCamera.SetActive(true);
+            mainCamera.transform.position = new Vector3(exitLocation.position.x, mainCamera.transform.position.y, exitLocation.position.z);
             isPlaying = false;
             reset();
         }
@@ -48,7 +54,6 @@ public class Maze : MonoBehaviour {
     void monkeyCaught()
     {
         reset();
-
     }
     void reset()
     {
@@ -91,26 +96,36 @@ public class Maze : MonoBehaviour {
 	}
 
 	void PlayerMovement () {
-		if(Input.GetAxis("Horizontal") > 0 && pCanMoveRight){
+        if(Input.GetAxisRaw("Horizontal") == 1 && pCanMoveRight && buttonChangedX){
 			player.Translate(Vector3.right * speed);
 			chance = false;
+            buttonChangedX = false; 
             return;
 		}
-		if(Input.GetAxis("Horizontal") < 0 && pCanMoveLeft){
+		if(Input.GetAxisRaw("Horizontal") == -1 && pCanMoveLeft && buttonChangedX){
 			player.Translate(Vector3.left * speed);
 			chance = false;
+            buttonChangedX = false; 
             return;
 		}
-		if(Input.GetAxis("Vertical") > 0 && pCanMoveUp){
+		if(Input.GetAxisRaw("Vertical") == 1 && pCanMoveUp && buttonChangedY){
 			player.Translate(Vector3.forward * speed);
 			chance = false;
+            buttonChangedY = false; 
             return;
 		}
-		if(Input.GetAxis("Vertical") < 0 && pCanMoveDown){
+        if(Input.GetAxisRaw("Vertical") == -1 && pCanMoveDown && buttonChangedY){
 			player.Translate(Vector3.back * speed);
 			chance = false;
+            buttonChangedY = false; 
             return;
 		}
+        if(Input.GetAxisRaw("Horizontal") == 0)
+            buttonChangedX = true;
+        if(Input.GetAxisRaw("Vertical") == 0)
+            buttonChangedY = true;
+
+
 	}
 
 	void MonkeyMovement () {

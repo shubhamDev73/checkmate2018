@@ -29,13 +29,14 @@ public class RideToggle : MonoBehaviour {
         if(col.CompareTag("Player") && Input.GetButtonDown("Click"))
         {
             onRide = true;
+            return;
         }
     }
 	void Start () {
         _onRide = false;
 	}
 
-	void Update () {
+	void LateUpdate () {
         if(onRide)
         {
             if(Input.GetButtonDown("Exit"))

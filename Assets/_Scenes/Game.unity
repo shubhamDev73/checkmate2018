@@ -22953,7 +22953,8 @@ MonoBehaviour:
   - {fileID: 1032904400}
   script: {fileID: 1446608812}
   player: {fileID: 241494633}
-  rotationSpeed: 1
+  maxSpeed: 0.5
+  minSpeed: 0.01
 --- !u!1 &1519508450
 GameObject:
   m_ObjectHideFlags: 0

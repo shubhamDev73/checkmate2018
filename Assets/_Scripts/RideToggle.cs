@@ -15,6 +15,7 @@ public class RideToggle : MonoBehaviour {
             if(_onRide)
             {
                 playerLastY = player.position.y;
+
             }
             else
             {
@@ -25,18 +26,14 @@ public class RideToggle : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-        Debug.Log("Entered");
         if(col.CompareTag("Player") && Input.GetButtonDown("Click"))
         {
-            Debug.Log("Starting Ride");
             onRide = true;
         }
     }
 	void Start () {
         _onRide = false;
-
 	}
-
 
 	void Update () {
         if(onRide)

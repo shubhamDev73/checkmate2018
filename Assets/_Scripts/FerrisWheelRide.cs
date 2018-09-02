@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
 public class FerrisWheelRide : MonoBehaviour {
-
     public GameObject []seats;
     public RideToggle script;
     public Transform player;
-    public float rotationSpeed;
+    public float maxSpeed, minSpeed;
+    private float rotationSpeed;
     private int mainSeat;
     private bool _rideStart;
     private bool rideStart
@@ -35,12 +35,12 @@ public class FerrisWheelRide : MonoBehaviour {
         return min;
     }
 
-	void Update () {
+	void FixedUpdate () {
         if(rideStart && script.onRide)
         {
-            player.position = seats[mainSeat].transform.position - new Vector3(0, 1.5f, 0);
-            transform.Rotate(0, 0, rotationSpeed, Space.Self);
-            return;
+            player.position = seats[mainSeat].transform.position - new Vector3(0, 0.5f, 0);
+            rotationSpeed = Mathf.Lerp(rotationSpeed, maxSpeed, 0.05f);
+
         }
         else if(script.onRide)
         {
@@ -49,8 +49,8 @@ public class FerrisWheelRide : MonoBehaviour {
         else
         {
             rideStart = false;
+            rotationSpeed = Mathf.Lerp(rotationSpeed, minSpeed, 0.01f);
         }
-
-
+        transform.Rotate(0, 0, rotationSpeed, Space.Self);
 	}
 }

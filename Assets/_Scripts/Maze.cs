@@ -27,7 +27,6 @@ public class Maze : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         if(col.CompareTag("Player")){
-            Debug.Log("Trigger Entered");
             setIsPlaying(true);
         }
     }
@@ -36,14 +35,12 @@ public class Maze : MonoBehaviour {
     {
         if(value)
         {
-            Debug.Log("Entered");
             mainCamera.SetActive(false);
             camera.SetActive(true);
             isPlaying = true;
         }
         else
         {
-            Debug.Log("Exited");
             camera.SetActive(false);
             mainCamera.SetActive(true);
             mainCamera.transform.position = new Vector3(exitLocation.position.x, mainCamera.transform.position.y, exitLocation.position.z);
@@ -66,6 +63,7 @@ public class Maze : MonoBehaviour {
             if(Input.GetButtonDown("Reset")){
                 reset();
                 return;
+
             }
             if(Input.GetButtonDown("Exit")){
                 setIsPlaying(false);
@@ -99,25 +97,25 @@ public class Maze : MonoBehaviour {
         if(Input.GetAxisRaw("Horizontal") == 1 && pCanMoveRight && buttonChangedX){
 			player.Translate(Vector3.right * speed);
 			chance = false;
-            buttonChangedX = false; 
+            buttonChangedX = false;
             return;
 		}
 		if(Input.GetAxisRaw("Horizontal") == -1 && pCanMoveLeft && buttonChangedX){
 			player.Translate(Vector3.left * speed);
 			chance = false;
-            buttonChangedX = false; 
+            buttonChangedX = false;
             return;
 		}
 		if(Input.GetAxisRaw("Vertical") == 1 && pCanMoveUp && buttonChangedY){
 			player.Translate(Vector3.forward * speed);
 			chance = false;
-            buttonChangedY = false; 
+            buttonChangedY = false;
             return;
 		}
         if(Input.GetAxisRaw("Vertical") == -1 && pCanMoveDown && buttonChangedY){
 			player.Translate(Vector3.back * speed);
 			chance = false;
-            buttonChangedY = false; 
+            buttonChangedY = false;
             return;
 		}
         if(Input.GetAxisRaw("Horizontal") == 0)

@@ -34,6 +34,7 @@ public class RideToggle : MonoBehaviour {
     }
 	void Start () {
         _onRide = false;
+
 	}
 
 	void LateUpdate () {

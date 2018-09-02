@@ -4,7 +4,6 @@ public class Balance : MonoBehaviour {
 
 	public int coins;
 	public GameObject coinPrefab;
-
 	private int moveCoins = 1, totalCoins, tries = 0;
 	private bool canIncrement = false, chance, calculatedFirstScale;
 

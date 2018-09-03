@@ -26,7 +26,7 @@ public class MonkeyDoor : MonoBehaviour {
 			if(WinCheck(doorId)){
 				monkeyIsIn[doorId] = false;
 				GameManager.solved[1] = true;
-				GameManager.score += Mathf.Clamp(50 - tries, 0, 50);
+				GameManager.score += 600* Mathf.Pow(0.98f,tries);
 				StartCoroutine(SpawnSkeleton(col.transform.position));
 			}
 		}
@@ -57,9 +57,9 @@ public class MonkeyDoor : MonoBehaviour {
 		bool[] temp = new bool[size];
 		for(int i = 0; i < size; i++)
 			temp[i] = false;
-		
+
 		monkeyIsIn[guess] = false;
-		
+
 		if(monkeyIsIn[0]){
 			temp[1] = true;
 			temp[0] = false;

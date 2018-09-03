@@ -2057,6 +2057,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
   m_IsPrefabAsset: 0
@@ -11545,6 +11549,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 1.32
       objectReference: {fileID: 0}
+    - target: {fileID: 1601602066568808, guid: 1ae1c929a79864bda8393f17f11f7901, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ae1c929a79864bda8393f17f11f7901, type: 2}
   m_IsPrefabAsset: 0
@@ -11764,6 +11772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 804469892}
+  - component: {fileID: 804469893}
   m_Layer: 0
   m_Name: MiniGame3
   m_TagString: Untagged
@@ -11786,6 +11795,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &804469893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 804469891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62eaef6e8afd4112a1c33c93d160100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 241494633}
+  winPosition: {fileID: 241494633}
+  losePosition: {fileID: 241494633}
+  gameNo: 3
 --- !u!1001 &805120299
 Prefab:
   m_ObjectHideFlags: 0
@@ -13024,6 +13048,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 787537771}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &879549997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879549998}
+  m_Layer: 0
+  m_Name: LosePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879549998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879549997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 0, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1538811295}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &880320334
 Prefab:
@@ -15820,6 +15872,10 @@ Prefab:
     - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
       propertyPath: m_Name
       value: Wall2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
@@ -20067,6 +20123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1326585263}
+  - component: {fileID: 1326585264}
   m_Layer: 0
   m_Name: MiniGame4
   m_TagString: Untagged
@@ -20090,6 +20147,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1326585264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326585262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62eaef6e8afd4112a1c33c93d160100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 241494633}
+  winPosition: {fileID: 241494633}
+  losePosition: {fileID: 241494633}
+  gameNo: 4
 --- !u!1001 &1327922506
 Prefab:
   m_ObjectHideFlags: 0
@@ -23860,6 +23932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1538811295}
+  - component: {fileID: 1538811296}
   m_Layer: 0
   m_Name: MiniGame2
   m_TagString: Untagged
@@ -23882,9 +23955,26 @@ Transform:
   - {fileID: 1264627139}
   - {fileID: 1456715918}
   - {fileID: 758195404}
+  - {fileID: 1592525231}
+  - {fileID: 879549998}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1538811296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1538811294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62eaef6e8afd4112a1c33c93d160100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 241494633}
+  winPosition: {fileID: 1592525231}
+  losePosition: {fileID: 879549998}
+  gameNo: 2
 --- !u!1 &1539681576
 GameObject:
   m_ObjectHideFlags: 0
@@ -24779,6 +24869,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4067752646402838, guid: aaeb76328d9924e7eaefdebe31a23205,
     type: 2}
   m_PrefabInternal: {fileID: 1582870909}
+--- !u!1 &1592525230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592525231}
+  m_Layer: 0
+  m_Name: WinPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1592525231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592525230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25, y: 0, z: 29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1538811295}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1593189650
 Prefab:
   m_ObjectHideFlags: 0
@@ -27010,6 +27128,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4056193918246288, guid: 5c32ec0dfe8c9f6429cc3b837b2c076a,
     type: 2}
   m_PrefabInternal: {fileID: 1759502975}
+--- !u!1 &1759502977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1251607484035924, guid: 5c32ec0dfe8c9f6429cc3b837b2c076a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1759502975}
+--- !u!114 &1759502978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759502977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447f3029f9bfa481ebfa6e61da2ec5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 1538811296}
 --- !u!1001 &1760604925
 Prefab:
   m_ObjectHideFlags: 0
@@ -27127,6 +27262,10 @@ Prefab:
     - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
       propertyPath: m_Name
       value: Wall2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
@@ -28048,7 +28187,7 @@ GameObject:
   - component: {fileID: 1824909592}
   - component: {fileID: 1824909593}
   m_Layer: 0
-  m_Name: WInCollider
+  m_Name: WinCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28292,6 +28431,10 @@ Prefab:
     - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
       propertyPath: m_Name
       value: Wall2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901873850778656, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f9dadd825826f45b45b3797f359c40, type: 2}

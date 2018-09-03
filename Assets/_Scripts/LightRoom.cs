@@ -4,8 +4,21 @@ public class LightRoom : MonoBehaviour {
 
 	public Transform[] lights;
 
-	private int tries = 0;
 
+	public static int tries = 0;
+
+    int fib(int n){
+        int a =0;
+        int b =1;
+        int temp = 0;
+        for(int i=0; i<n;++i)
+        {
+            temp = b;
+            b = b+a;
+            a = temp;
+        }
+        return a;
+    }
 	void Update () {
 		if(GameManager.solved[3])
 			return;
@@ -18,7 +31,7 @@ public class LightRoom : MonoBehaviour {
 				}
 			}
 			if(done){
-				GameManager.score += (30 - tries) * 2;
+				GameManager.score += (400 - 3*fib(tries));
 				GameManager.solved[3] = true;
 			}
 		}

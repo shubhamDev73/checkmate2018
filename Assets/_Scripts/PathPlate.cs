@@ -4,16 +4,17 @@ public class PathPlate : MonoBehaviour {
 
 	public GameObject wallPrefab;
 
-	private static float cost = 0, lastCost = 0;
+	public static float cost = 0, lastCost = 0;
 	private static Vector3 lastPlateLocation;
 	private static bool updateXMode = false, updateYMode = false; // Considers whether to update only in y or x
 
-    void Start()
+    public void Start()
     {
         cost = 4;
+        updateXMode = updateYMode = false;
     }
 	void OnTriggerEnter(Collider col) {
-		if(col.CompareTag("Player")){
+		if(!GameManager.solved[2] && col.CompareTag("Player")){
 			int rot = 180;
 			col.gameObject.transform.position = new Vector3(transform.position.x, col.gameObject.transform.position.y, transform.position.z);
 			if(updateXMode)
@@ -24,7 +25,7 @@ public class PathPlate : MonoBehaviour {
 					cost = lastCost + 2;
 					rot = 90;
 				}
-			
+
 			if(updateYMode)
 				if(Vector3.Dot((transform.position - lastPlateLocation).normalized, transform.forward) == 1){
 					cost = lastCost * 2;
@@ -33,7 +34,7 @@ public class PathPlate : MonoBehaviour {
 					cost = lastCost / 2;
 					rot = 0;
 				}
-			
+
 			Debug.Log("x: " + updateXMode.ToString() + ", y: " + updateYMode.ToString() + ", cost: " + cost.ToString());
 			Instantiate(wallPrefab, transform.position, Quaternion.Euler(0, rot, 0));
 
@@ -43,7 +44,7 @@ public class PathPlate : MonoBehaviour {
 	}
 
 	void OnTriggerExit (Collider col) {
-		if(col.CompareTag("Player")){
+		if(!GameManager.solved[2] && col.CompareTag("Player")){
 			int rot = 180;
 			if(Mathf.Abs(Vector3.Dot((col.transform.position - transform.position).normalized, transform.right)) > Mathf.Abs(Vector3.Dot((col.transform.position - transform.position).normalized, transform.forward))){
 				updateXMode = true;
@@ -59,5 +60,5 @@ public class PathPlate : MonoBehaviour {
 			Instantiate(wallPrefab, transform.position, Quaternion.Euler(0, rot, 0));
 		}
 	}
-	
+
 }

@@ -4612,7 +4612,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b89be513a2949b4897592e438ffe26f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b89be513a2949b4897592e438ffe26f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4662,8 +4662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6f1d69952a0374d993a606be0a128b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 42
   coinPrefab: {fileID: 1953464822481272, guid: 61742fd6fd8c70241b5459f81c51826e, type: 2}
+  totalCoins: 42
 --- !u!65 &311116519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4691,8 +4691,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 2.2898617, z: 8}
-  m_Center: {x: -0.000000014901161, y: 1.1449308, z: 0}
+  m_Size: {x: 5, y: 2.2898617, z: 6}
+  m_Center: {x: 0, y: 1.1449308, z: 0}
 --- !u!1001 &312210707
 Prefab:
   m_ObjectHideFlags: 0
@@ -4830,6 +4830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitLocation: {fileID: 412137635}
   player: {fileID: 241494633}
+  my_col: {fileID: 0}
 --- !u!1001 &329005190
 Prefab:
   m_ObjectHideFlags: 0
@@ -11584,6 +11585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitLocation: {fileID: 877939008}
   player: {fileID: 241494633}
+  my_col: {fileID: 0}
 --- !u!65 &787537775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20757,6 +20759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitLocation: {fileID: 1723177020}
   player: {fileID: 241494633}
+  my_col: {fileID: 0}
 --- !u!136 &1345094496
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22393,6 +22396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exitLocation: {fileID: 253229988}
   player: {fileID: 241494633}
+  my_col: {fileID: 0}
 --- !u!65 &1446608814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31792,7 +31796,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2056542596}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: 0, y: 3.5, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1326585263}

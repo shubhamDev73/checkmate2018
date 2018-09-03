@@ -33,7 +33,7 @@ public class DragonRide : MonoBehaviour {
         else
         {
             rideStart = false;
-            transform.rotation = Quaternion.Euler(0, 0, thetaMax*Mathf.Exp(tempTime-Time.time)*Mathf.Cos(omega*(tempTime-Time.time)));
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 	}
 }

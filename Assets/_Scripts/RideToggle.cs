@@ -26,7 +26,7 @@ public class RideToggle : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-        if(col.CompareTag("Player") && Input.GetButtonDown("Click"))
+        if(col.CompareTag("Player") && Input.GetButtonDown("Click") && !onRide)
         {
             onRide = true;
             return;

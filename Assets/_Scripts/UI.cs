@@ -6,11 +6,11 @@ using UnityEngine.EventSystems;
 public class UI : MonoBehaviour {
 
 	public Transform cam, startPoint;
-	public Text score, time, instructionsText, gameElementsText;
+	public Text ipText, usernameText, passwordText, idText, scoreText, timeText, instructionsText, gameElementsText;
 	public GameObject skeleton, okButton;
 
 	private bool move = false;
-	private String[] allTexts = new String[6];
+	private string[] allTexts = new string[6];
 	private float timer;
 
 	void Start () {
@@ -24,8 +24,22 @@ public class UI : MonoBehaviour {
 	}
 
 	public void Play () {
-		transform.GetChild(0).gameObject.SetActive(false);
-		move = true;
+		URL.ip = ipText.text;
+		URL.username = usernameText.text;
+		URL.password = passwordText.text;
+		string result = URL.Request("register.php", "bitsid="+idText.text);
+		if(result == "register"){
+			transform.GetChild(0).gameObject.SetActive(false);
+			move = true;
+		}else if(result.Contains("login")){
+			GameManager.score = Int32.Parse(result.Substring(5));
+			transform.GetChild(0).gameObject.SetActive(false);
+			move = true;
+		}else if(result == "error logging"){
+			Debug.Log("wrong password");
+		}else{
+			Debug.Log("user exists");
+		}
 	}
 
 	public void Display (int game) {
@@ -65,8 +79,8 @@ public class UI : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		score.text = "Score: " + GameManager.score.ToString();
-		time.text = "Time: " + Mathf.Floor(timer/3600).ToString() + "h " + (Mathf.Floor(timer/60)%60).ToString() + "m " + Mathf.Floor(timer%60).ToString() + "s";
+		scoreText.text = "Score: " + GameManager.score.ToString();
+		timeText.text = "Time: " + Mathf.Floor(timer/3600).ToString() + "h " + (Mathf.Floor(timer/60)%60).ToString() + "m " + Mathf.Floor(timer%60).ToString() + "s";
 		timer -= Time.fixedDeltaTime;
 	}
 

@@ -2,16 +2,30 @@
 
 public class Coin : MonoBehaviour {
 
-	public Transform scale;
+    private Vector3 finalPos;
+    private Transform _scale;
+	public Transform scale{
+        get {return _scale;}
+        set {
+            _scale = value;
+            float random = Random.value * 0.1f;
+            Vector2 randomPos = Random.insideUnitCircle * random * 3;
+            finalPos = _scale.position - new Vector3(0, 1.3f - random, 0) + new Vector3(randomPos.x, 0, randomPos.y);
+        }
+    }
 
-	private Vector3 lastPos;
+    void Awake()
+    {
+        finalPos = transform.position;
+    }
 
-	public void Place () {
-		if(scale.position == lastPos) return;
-		float random = Random.value * 0.1f;
-		Vector2 randomPos = Random.insideUnitCircle * random * 3;
-		transform.position = scale.position - new Vector3(0, 1.3f - random, 0) + new Vector3(randomPos.x, 0, randomPos.y);
-		lastPos = scale.position;
-	}
-
+    void Update(){
+        if((finalPos-transform.position).sqrMagnitude >= 0.1f)
+        {
+            transform.position = Vector3.Lerp(transform.position,finalPos,0.1f);
+        }else
+        {
+            transform.position = finalPos;
+        }
+    }
 }

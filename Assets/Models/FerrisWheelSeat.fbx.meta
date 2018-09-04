@@ -14,7 +14,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: FerrisWheelSeat
-    second: {fileID: 2100000, guid: d5b2710a15f8dea42bb33bf446ac8feb, type: 2}
+    second: {fileID: 2100000, guid: 57e939cfd727fe8468a541c7f1f8735d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

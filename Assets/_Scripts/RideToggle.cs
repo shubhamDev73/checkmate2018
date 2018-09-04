@@ -45,7 +45,6 @@ public class RideToggle : MonoBehaviour {
         {
             if(Input.GetButtonDown("Exit"))
             {
-                Debug.Log("Exiting");
                 onRide = false;
                 return;
             }

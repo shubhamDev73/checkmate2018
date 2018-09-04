@@ -14,7 +14,7 @@ public class UI : MonoBehaviour {
 	private float timer;
 
 	void Start () {
-			timer = 3600 * 2;
+			timer = 60 * 60 + 45 * 60;
 			allTexts[0] = "On exactly this day, 200 years ago, I was brutally murdered here, right where you stand. But my murder still remains a mystery today. I won't let you leave this place until you solve my murder. Oh, and you have only 2 hours.\nHA HA HA HA...";
 			allTexts[1] = "Behind these doors roams the skeleton of my murderer. You'll have to catch him. Guess which room can contain him, and if you are wrong, he moves to its adjacent room. Corner him and catch him!!";
 			allTexts[2] = "MiniGame2";

@@ -16,8 +16,7 @@ public class Maze : MonoBehaviour {
 	private Vector3 playerInit, monkeyInit;
 	void Start () {
 		chance = true;
-//		pCanMoveRight = pCanMoveLeft = pCanMoveUp = pCanMoveDown = true;
-//		mCanMoveRight = mCanMoveLeft = mCanMoveUp = mCanMoveDown = true;
+        player.
 		playerInit = player.position;
 		monkeyInit = monkey.position;
 		monkeyTurnsLeft = maxMonkeyTurns;
@@ -36,6 +35,7 @@ public class Maze : MonoBehaviour {
         if(value)
         {
             mainCamera.SetActive(false);
+            mainCamera.
             camera.SetActive(true);
             isPlaying = true;
         }

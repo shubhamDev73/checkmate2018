@@ -12,6 +12,7 @@ public class LightSwitch : MonoBehaviour {
 	private bool rotated = true;
 
 	void Awake () {
+        Debug.Log("Awake");
 		for(int i = 0; i < room.lights.Length; i++){
 			Transform temp = room.lights[i];
 			int random = Random.Range(0, room.lights.Length);
@@ -21,6 +22,7 @@ public class LightSwitch : MonoBehaviour {
 	}
 
 	void Start () {
+        Debug.Log("Start");
 		lamp = room.lights[id].GetChild(0).GetComponent<Light>();
 		initIntensity = lamp.intensity;
 		lamp.intensity = 0;

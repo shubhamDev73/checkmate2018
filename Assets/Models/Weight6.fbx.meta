@@ -5,7 +5,8 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Weight6
+    2100000: Weight6Number
+    2100002: Weight6
     2300000: //RootNode
     3300000: //RootNode
     4300000: Weight6
@@ -15,6 +16,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Weight6
     second: {fileID: 2100000, guid: 3b04f57739669b84bb6ac6c8eb56b03b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Weight6Number
+    second: {fileID: 2100000, guid: b2cf8a48e1b88d1488103ce38995b683, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -22,6 +22,8 @@ public class RideToggle : MonoBehaviour {
             else
             {
                 player.position = new Vector3(exitLocation.position.x,playerLastY,exitLocation.position.z);
+                player.rotation = Quaternion.identity;
+                player.GetChild(0).rotation = Quaternion.identity;
                 my_col.enabled = true;
             }
         }

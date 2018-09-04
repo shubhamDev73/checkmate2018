@@ -27,17 +27,19 @@ public class UpRide : MonoBehaviour {
 	void FixedUpdate () {
         if(script.onRide)
         {
+            transform.Rotate(0,1f*Input.GetAxis("Horizontal"),0,Space.Self);
+            player.rotation = transform.rotation;
+            player.Rotate(0,180,0);
             if(goingUp)
             {
                 velocity = 0.015f;
-                transform.Rotate(0,0.15f,0,Space.Self);
                 if(transform.position.y >= 10f)
                 {
                     goingUp = false;
                 }
             }else
             {
-                velocity -= 0.003f;
+                velocity -= 0.005f;
                 if(transform.position.y <= 1f)
                 {
                     goingUp = true;

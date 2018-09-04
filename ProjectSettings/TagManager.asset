@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Wall2
+  - MonkeyDoor
   layers:
   - Default
   - TransparentFX

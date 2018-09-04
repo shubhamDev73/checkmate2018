@@ -33,8 +33,9 @@ public class Balance : MonoBehaviour {
         get{return _chance;}
         set{
             _chance = value;
-            if(!_chance)
+            if(!GameManager.solved[4] && !_chance)
             {
+
                 StartCoroutine(Delay(2));
             }
         }
@@ -65,7 +66,7 @@ public class Balance : MonoBehaviour {
         }
     }
     void Update(){
-        if(canUpdate && chance){
+        if(!GameManager.solved[4] && canUpdate && chance){
             if(Input.GetButtonDown("Increment")) moveCoins++;
             if(Input.GetButtonDown("Decrement")) moveCoins--;
             moveCoins = Mathf.Clamp(moveCoins, 1, 4);

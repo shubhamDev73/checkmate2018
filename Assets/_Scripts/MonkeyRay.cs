@@ -7,7 +7,7 @@ public class MonkeyRay : MonoBehaviour {
 	}
 
 	void Update () {
-        if(canCast && Input.GetButtonDown("Click"))
+        if(!GameManager.solved[1] && canCast && Input.GetButtonDown("Click"))
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -25,7 +25,7 @@ public class MonkeyRay : MonoBehaviour {
             canCast = true;
     }
     void OnTriggerExit(Collider col){
-        if(!GameManager.solved[1] && col.CompareTag("Player"))
+        if(GameManager.solved[1] || col.CompareTag("Player"))
             canCast = false;
     }
 

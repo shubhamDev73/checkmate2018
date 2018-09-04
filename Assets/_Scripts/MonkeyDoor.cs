@@ -64,6 +64,7 @@ public class MonkeyDoor : MonoBehaviour {
     {
         if(col.CompareTag("Player"))
             playerNear = true;
+
     }
     void OnTriggerExit(Collider col)
     {

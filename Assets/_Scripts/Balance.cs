@@ -7,25 +7,14 @@ public class Balance : MonoBehaviour {
 	private int moveCoins = 1, tries = 0;
 	private bool _chance = true;
     private int _coins;
+    private bool skeleWon;
     private bool canUpdate;
     private int coins
     {
         get{return _coins;}
         set{
             _coins = value;
-            CalculateScale();
-            transform.GetChild(0).eulerAngles = new Vector3(0, 0, (2 * _coins - totalCoins) * 0.5f);
-            transform.GetChild(0).GetChild(0).eulerAngles = new Vector3(0, 180, 0);
-            transform.GetChild(0).GetChild(1).eulerAngles = new Vector3(0, 180, 0);
-            if(_coins == totalCoins / 2){
-                if(chance){
-                    GameManager.score += Mathf.Clamp(50 - tries, 0, 50);
-                    GameManager.solved[4] = true;
-                }else
-                    Reset();
-            }else if(_coins < totalCoins/2)
-                Reset();
-
+            StartCoroutine(CalculateScale());
         }
     }
     private bool chance
@@ -49,8 +38,9 @@ public class Balance : MonoBehaviour {
 	void Reset () {
         // add visual indicator that you have lost
         _chance =false;
+        skeleWon = false;
 		coins = totalCoins;
-        CalculateScale();
+        StartCoroutine(CalculateScale());
 		tries++;
         _chance = true;
 	}
@@ -89,8 +79,11 @@ public class Balance : MonoBehaviour {
 			FindObjectOfType<UI>().DisplayText(0);
 		}
 	}
-	void CalculateScale () {
+	IEnumerator CalculateScale () {
 		int n = 0;
+        transform.GetChild(0).eulerAngles = new Vector3(0, 0, (2 * _coins - totalCoins) * 0.5f);
+        transform.GetChild(0).GetChild(0).eulerAngles = new Vector3(0, 180, 0);
+        transform.GetChild(0).GetChild(1).eulerAngles = new Vector3(0, 180, 0);
 		foreach(GameObject coin in GameObject.FindGameObjectsWithTag("Coin")){
 			if(n < coins) coin.GetComponent<Coin>().scale = transform.GetChild(0).GetChild(0);
 			else coin.GetComponent<Coin>().scale = transform.GetChild(0).GetChild(1);
@@ -98,6 +91,17 @@ public class Balance : MonoBehaviour {
 		}
 		transform.GetChild(0).GetChild(0).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + coins.ToString()));
 		transform.GetChild(0).GetChild(1).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + (totalCoins - coins).ToString()));
+        if(_coins == totalCoins / 2){
+            if(chance){
+                GameManager.tries[4] = tries;
+                GameManager.solved[4] = true;
+            }else
+                skeleWon = true;
+        }else if(_coins < totalCoins/2)
+            skeleWon= true;
+        yield return new WaitForSeconds(2);
+        if(skeleWon)
+            Reset();
 	}
 }
 

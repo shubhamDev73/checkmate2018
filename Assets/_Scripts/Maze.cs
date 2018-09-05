@@ -9,6 +9,7 @@ public class Maze : MonoBehaviour {
 	public bool pCanMoveRight, pCanMoveLeft, pCanMoveUp, pCanMoveDown, mCanMoveRight, mCanMoveLeft, mCanMoveUp, mCanMoveDown;
     public GameObject cameraTopDown;
     public GameObject originalCamera;
+    public MazeWin mazeWin;
 	private bool chance;
     private bool buttonChangedX , buttonChangedY;
 	private int monkeyTurnsLeft;
@@ -23,7 +24,7 @@ public class Maze : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.CompareTag("Player")){
+        if(col.CompareTag("Player") && !GameManager.solved[5]){
             setIsPlaying(true);
         }
     }
@@ -51,6 +52,7 @@ public class Maze : MonoBehaviour {
     }
     void reset()
     {
+        mazeWin.tries += 1;
         player.position = playerInit;
         monkey.position = monkeyInit;
         Start();

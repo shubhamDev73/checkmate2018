@@ -10,7 +10,6 @@ public class MonkeyDoor : MonoBehaviour {
 	private static bool[] monkeyIsIn = {true, true, true, true, true, true};
 	private static int size = 6;
 	private static int tries = 0;
-	private bool clicked = false;
     private bool canCast;
     private bool _isOpen;
     private bool playerNear;
@@ -24,8 +23,8 @@ public class MonkeyDoor : MonoBehaviour {
                 anim.SetBool("open", true);
                 if(WinCheck(doorId)){
                     monkeyIsIn[doorId] = false;
+                    GameManager.tries[1] = tries;
                     GameManager.solved[1] = true;
-                    GameManager.score += 600* Mathf.Pow(0.98f,tries);
                     StartCoroutine(SpawnSkeleton(player.position));
                 }
                 StartCoroutine(CloseDelay());
@@ -71,29 +70,6 @@ public class MonkeyDoor : MonoBehaviour {
         if(col.CompareTag("Player"))
             playerNear = false;
     }
-	// void OnTriggerStay (Collider col) {
-	// 	if(!GameManager.solved[1] && !clicked && col.CompareTag("Player") && Input.GetButtonDown("Click")){
-	// 		anim.SetBool("open", true);
-	// 		clicked = true;
-	// 		if(WinCheck(doorId)){
-	// 			monkeyIsIn[doorId] = false;
-	// 			GameManager.solved[1] = true;
-	// 			GameManager.score += 600* Mathf.Pow(0.98f,tries);
-	// 			StartCoroutine(SpawnSkeleton(col.transform.position));
-	// 		}
-	// 	}
-	// }
-
-	// void OnTriggerExit (Collider col) {
-	// 	if(!GameManager.solved[1] && col.CompareTag("Player") && clicked){
-	// 		anim.SetBool("open", false);
-	// 		MonkeyUpdate(doorId);
-	// 		clicked = false;
-	// 	}
-	// }
-
-
-
 	bool WinCheck (int choice) {
 		tries++;
 		int index = -1;

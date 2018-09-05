@@ -9911,7 +9911,7 @@ GameObject:
   - component: {fileID: 689853211}
   - component: {fileID: 689853214}
   - component: {fileID: 689853213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16720,8 +16720,6 @@ MonoBehaviour:
   exitLocation: {fileID: 47165635}
   speed: 2
   maxMonkeyTurns: 2
-  monkeyTurnsPlayed: 0
-  monkeyTurnsLeft: 0
   isPlaying: 0
   pCanMoveRight: 1
   pCanMoveLeft: 1
@@ -16731,9 +16729,8 @@ MonoBehaviour:
   mCanMoveLeft: 1
   mCanMoveUp: 1
   mCanMoveDown: 1
-  camera: {fileID: 86375539}
-  mainCamera: {fileID: 241494631}
-  sensitivity: 0
+  cameraTopDown: {fileID: 86375539}
+  originalCamera: {fileID: 241494631}
 --- !u!65 &1160057857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21720,7 +21717,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1387527861}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 27.4, y: 0, z: 34.2}
+  m_LocalPosition: {x: 0.4, y: 0, z: -6.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2053162570}
@@ -31759,7 +31756,6 @@ GameObject:
   - component: {fileID: 2053162577}
   - component: {fileID: 2053162578}
   - component: {fileID: 2053162581}
-  - component: {fileID: 2053162582}
   m_Layer: 0
   m_Name: Hall1
   m_TagString: Untagged
@@ -31913,18 +31909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca4d200d204c4703a5ed918c394bbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &2053162582
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2053162571}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 2.3367305, z: 9}
-  m_Center: {x: -0.00000047683716, y: 1.1683652, z: -0.14}
 --- !u!1001 &2056467032
 Prefab:
   m_ObjectHideFlags: 0

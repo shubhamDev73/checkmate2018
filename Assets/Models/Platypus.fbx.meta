@@ -1,20 +1,38 @@
 fileFormatVersion: 2
-guid: 308486b8d49d51f49be21fdf975150f5
+guid: 2fcc6c59131f28a45a0e4bd8055a0d0b
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: FerrisWheelSeat
+    2100000: PlatypusBody
+    2100002: PlatypusExtra
+    2100004: PlatypusTail
+    2100006: PlaypusEyes
     2300000: //RootNode
     3300000: //RootNode
-    4300000: FerrisWheelSeat
+    4300000: Platypus
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelSeat
-    second: {fileID: 2100000, guid: 57e939cfd727fe8468a541c7f1f8735d, type: 2}
+      name: PlatypusBody
+    second: {fileID: 2100000, guid: 4000d19b139a576418423b92d2a9b863, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlatypusExtra
+    second: {fileID: 2100000, guid: dcede6588b92e2748b9e4600cba1a515, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlatypusTail
+    second: {fileID: 2100000, guid: 103e421f832e2b64fbe88bc67688cc21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlaypusEyes
+    second: {fileID: 2100000, guid: aa74714b31c20114fbc7cd9b3eff71b9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

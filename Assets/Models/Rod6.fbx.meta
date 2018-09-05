@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 308486b8d49d51f49be21fdf975150f5
+guid: 14da58f784690c24eb60cd0b547f2407
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: FerrisWheelSeat
+    2100000: Rod6
     2300000: //RootNode
     3300000: //RootNode
-    4300000: FerrisWheelSeat
+    4300000: Rod6
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelSeat
-    second: {fileID: 2100000, guid: 57e939cfd727fe8468a541c7f1f8735d, type: 2}
+      name: Rod6
+    second: {fileID: 2100000, guid: 5d9bae5ae37c4b54e9b6019a3a63f777, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

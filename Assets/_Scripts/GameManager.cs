@@ -2,14 +2,24 @@
 
 public class GameManager : MonoBehaviour {
 
-	public static float score;
     public static Solved solved;
     public static int []tries;
+    private static int _score;
+	public static int score
+	{
+		get{
+			return _score;
+		}
+		set{
+			_score = value;
+			URL.Request("score.php", "score="+score);
+		}
+	}
 
-	void Start () {
+    void Start () {
         tries = new int[6];     // 6 is the no. of minigames
         solved = new Solved(6, this);
-		score = 0;
+		_score = 0;
 		Time.timeScale = 0;
 	}
 

@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 308486b8d49d51f49be21fdf975150f5
+guid: e303a7bb8e9a138489c5bee7008aa854
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: FerrisWheelSeat
+    2100000: Radio
     2300000: //RootNode
     3300000: //RootNode
-    4300000: FerrisWheelSeat
+    4300000: Radio
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FerrisWheelSeat
-    second: {fileID: 2100000, guid: 57e939cfd727fe8468a541c7f1f8735d, type: 2}
+      name: Radio
+    second: {fileID: 2100000, guid: 2669416f7bd4ba64b957f100011785e3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -22,12 +22,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MechanicalBull
-    second: {fileID: 2100000, guid: 81980361465d64c4da51f48856e7d03d, type: 2}
+    second: {fileID: 2100000, guid: 09c469f793cf6014a919ec03ca847142, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MechanicalBullStand
-    second: {fileID: 2100000, guid: e0a16bd5f890fa64abcd417c1a7d5120, type: 2}
+    second: {fileID: 2100000, guid: db6c5b1401577d14887936b1514cf59b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

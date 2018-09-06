@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224116160059453216}
   m_Layer: 5
-  m_Name: Key
+  m_Name: InstructionsKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

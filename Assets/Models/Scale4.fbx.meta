@@ -11,7 +11,7 @@ ModelImporter:
     2100006: Text4
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Scale4Right
+    4300000: Scale4Left
   externalObjects:
   - first:
       type: UnityEngine:Material

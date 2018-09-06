@@ -15,7 +15,7 @@ public class BullRide : MonoBehaviour {
         set {
             _rideStart = value;
             if(_rideStart){
-                transform.rotation = Quaternion.identity;
+                transform.rotation = Quaternion.Euler(0,180,0);
                 currentDelay = delay;
             }
             else{
@@ -29,7 +29,7 @@ public class BullRide : MonoBehaviour {
         while(timeLeft > 0)
         {
             Debug.Log(choices[nextChoice]);
-            transform.rotation = Quaternion.Euler(0,0,2*Mathf.PingPong(Time.time,45)-45);
+            transform.rotation = Quaternion.Euler(0,0,Mathf.PingPong(Time.time*50,90)-45);
             player.position = transform.GetChild(0).position;
             if(Input.GetButtonDown(choices[nextChoice]))
             {
@@ -40,18 +40,20 @@ public class BullRide : MonoBehaviour {
             }
             yield return 0;
         }
+        rideStart = false;
 
     }
     float getNextTime()
     {
         nextChoice = Random.Range(0, choices.Length);
-        currentDelay /= 2;
+        currentDelay /= 1.2f;
+        currentDelay = Mathf.Clamp(currentDelay,0.5f,delay);
         return currentDelay;
     }
 	void Update () {
-        if(script.onRide){
+        if(script.onRide && !rideStart){
+            rideStart = true;
             StartCoroutine(BullGame());
-            rideStart = false;
             return;
         }
         if(Mathf.Approximately(transform.eulerAngles.z,0f))

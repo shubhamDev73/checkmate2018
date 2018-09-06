@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 		}
 		set{
 			_score = value;
-			URL.Request("score.php", "score="+score);
+//			URL.Request("score.php", "score="+score);
 		}
 	}
 
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour {
     {
         switch(i){
             case 1:
-                score += (int)600*(Mathf.Pow(0.98f,tries[1]));
+                score += (int) (600*(Mathf.Pow(0.98f,tries[1])));
                 break;
             case 2:
 
@@ -70,7 +70,8 @@ public class GameManager : MonoBehaviour {
         {
             get{return _solved[i];}
             set{_solved[i] = value;
-                parent.CalculateScore(i);
+                if(value)
+                    parent.CalculateScore(i);
             }
         }
     }

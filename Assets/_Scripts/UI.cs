@@ -8,7 +8,6 @@ public class UI : MonoBehaviour {
 	public Transform cam, startPoint;
 	public Text ipText, usernameText, passwordText, idText, scoreText, timeText, instructionsText, gameElementsText;
 	public GameObject skeleton, okButton;
-
 	private bool move = false;
 	private string[] allTexts = new string[6];
 	private float timer;
@@ -24,22 +23,22 @@ public class UI : MonoBehaviour {
 	}
 
 	public void Play () {
-		URL.ip = ipText.text;
-		URL.username = usernameText.text;
-		URL.password = passwordText.text;
-		string result = URL.Request("register.php", "bitsid="+idText.text);
-		if(result == "register"){
+		// URL.ip = ipText.text;
+		// URL.username = usernameText.text;
+		// URL.password = passwordText.text;
+		// string result = URL.Request("register.php", "bitsid="+idText.text);
+		// if(result == "register"){
 			transform.GetChild(0).gameObject.SetActive(false);
 			move = true;
-		}else if(result.Contains("login")){
-			GameManager.score = Int32.Parse(result.Substring(5));
-			transform.GetChild(0).gameObject.SetActive(false);
-			move = true;
-		}else if(result == "error logging"){
-			Debug.Log("wrong password");
-		}else{
-			Debug.Log("user exists");
-		}
+		// }else if(result.Contains("login")){
+		// 	GameManager.score = Int32.Parse(result.Substring(5));
+		// 	transform.GetChild(0).gameObject.SetActive(false);
+		// 	move = true;
+		// }else if(result == "error logging"){
+		// 	Debug.Log("wrong password");
+		// }else{
+		// 	Debug.Log("user exists");
+		// }
 	}
 
 	public void Display (int game) {

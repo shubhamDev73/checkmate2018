@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour {
     }
 
 	void FixedUpdate () {
-		transform.Translate(Input.GetAxis("Horizontal") * speed * (Input.GetButton("Sprint") ? 1.5f : 1), 0, Input.GetAxis("Vertical") * speed * (Input.GetButton("Sprint") ? 1.5f:1), Space.Self);
+		transform.Translate(Input.GetAxis("Horizontal") * speed * (Input.GetButton("Sprint") ? 2f : 1), 0, Input.GetAxis("Vertical") * speed * (Input.GetButton("Sprint") ? 2f:1), Space.Self);
 		transform.Rotate(Vector3.up, Input.GetAxis("Mouse X"));
 		transform.GetChild(0).Rotate(Vector3.left, Input.GetAxis("Mouse Y"));
 		float rot = transform.GetChild(0).eulerAngles.x;

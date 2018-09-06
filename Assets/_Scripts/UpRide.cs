@@ -32,14 +32,14 @@ public class UpRide : MonoBehaviour {
             player.Rotate(0,180,0);
             if(goingUp)
             {
-                velocity = 0.015f;
-                if(transform.position.y >= 10f)
+                velocity = 0.03f;
+                if(transform.position.y >= 20f)
                 {
                     goingUp = false;
                 }
             }else
             {
-                velocity -= 0.005f;
+                velocity -= 0.01f;
                 if(transform.position.y <= 1f)
                 {
                     goingUp = true;

@@ -16,8 +16,6 @@ public class Maze : MonoBehaviour {
 	private Vector3 playerInit, monkeyInit;
 	void Start () {
 		chance = true;
-//		pCanMoveRight = pCanMoveLeft = pCanMoveUp = pCanMoveDown = true;
-//		mCanMoveRight = mCanMoveLeft = mCanMoveUp = mCanMoveDown = true;
 		playerInit = player.position;
 		monkeyInit = monkey.position;
 		monkeyTurnsLeft = maxMonkeyTurns;

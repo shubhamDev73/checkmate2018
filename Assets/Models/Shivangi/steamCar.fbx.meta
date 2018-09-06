@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 1f1236018954c4e38b9d433972b62937
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back axle
+    100002: body
+    100004: brakes
+    100006: Camera
+    100008: comp
+    100010: Cube.000
+    100012: Cube.003
+    100014: Cube.004
+    100016: Cylinder.004
+    100018: Cylinder.007
+    100020: differential
+    100022: Empty
+    100024: FenderL
+    100026: fenderR
+    100028: floor
+    100030: front axle
+    100032: fuel tank
+    100034: hood
+    100036: horn
+    100038: leafFL
+    100040: leafFR
+    100042: leafLR
+    100044: leafRR
+    100046: Plane.001
+    100048: Plane.002
+    100050: Plane.003
+    100052: Point
+    100054: Point.001
+    100056: Point.002
+    100058: Point.003
+    100060: Point.004
+    100062: Point.005
+    100064: posFL
+    100066: posFR
+    100068: posLR
+    100070: posRR
+    100072: seat
+    100074: seat side
+    100076: seatback
+    100078: side vents
+    100080: //RootNode
+    100082: tiller
+    100084: vents
+    100086: wheelFL
+    100088: wheelFR
+    100090: WheelLR
+    100092: wheelRR
+    400000: back axle
+    400002: body
+    400004: brakes
+    400006: Camera
+    400008: comp
+    400010: Cube.000
+    400012: Cube.003
+    400014: Cube.004
+    400016: Cylinder.004
+    400018: Cylinder.007
+    400020: differential
+    400022: Empty
+    400024: FenderL
+    400026: fenderR
+    400028: floor
+    400030: front axle
+    400032: fuel tank
+    400034: hood
+    400036: horn
+    400038: leafFL
+    400040: leafFR
+    400042: leafLR
+    400044: leafRR
+    400046: Plane.001
+    400048: Plane.002
+    400050: Plane.003
+    400052: Point
+    400054: Point.001
+    400056: Point.002
+    400058: Point.003
+    400060: Point.004
+    400062: Point.005
+    400064: posFL
+    400066: posFR
+    400068: posLR
+    400070: posRR
+    400072: seat
+    400074: seat side
+    400076: seatback
+    400078: side vents
+    400080: //RootNode
+    400082: tiller
+    400084: vents
+    400086: wheelFL
+    400088: wheelFR
+    400090: WheelLR
+    400092: wheelRR
+    2000000: Camera
+    2100000: Material
+    2100002: flat
+    2100004: dull grey
+    2100006: shiny black
+    2100008: tires
+    2100010: metal
+    2100012: wood
+    2100014: flatbase
+    2100016: leather
+    2100018: No Name
+    2300000: back axle
+    2300002: body
+    2300004: brakes
+    2300006: comp
+    2300008: Cube.000
+    2300010: Cube.003
+    2300012: Cube.004
+    2300014: Cylinder.004
+    2300016: Cylinder.007
+    2300018: differential
+    2300020: FenderL
+    2300022: fenderR
+    2300024: floor
+    2300026: front axle
+    2300028: fuel tank
+    2300030: hood
+    2300032: horn
+    2300034: leafFL
+    2300036: leafFR
+    2300038: leafLR
+    2300040: leafRR
+    2300042: Plane.001
+    2300044: Plane.002
+    2300046: Plane.003
+    2300048: posFL
+    2300050: posFR
+    2300052: posLR
+    2300054: posRR
+    2300056: seat
+    2300058: seat side
+    2300060: seatback
+    2300062: side vents
+    2300064: tiller
+    2300066: vents
+    2300068: wheelFL
+    2300070: wheelFR
+    2300072: WheelLR
+    2300074: wheelRR
+    3300000: back axle
+    3300002: body
+    3300004: brakes
+    3300006: comp
+    3300008: Cube.000
+    3300010: Cube.003
+    3300012: Cube.004
+    3300014: Cylinder.004
+    3300016: Cylinder.007
+    3300018: differential
+    3300020: FenderL
+    3300022: fenderR
+    3300024: floor
+    3300026: front axle
+    3300028: fuel tank
+    3300030: hood
+    3300032: horn
+    3300034: leafFL
+    3300036: leafFR
+    3300038: leafLR
+    3300040: leafRR
+    3300042: Plane.001
+    3300044: Plane.002
+    3300046: Plane.003
+    3300048: posFL
+    3300050: posFR
+    3300052: posLR
+    3300054: posRR
+    3300056: seat
+    3300058: seat side
+    3300060: seatback
+    3300062: side vents
+    3300064: tiller
+    3300066: vents
+    3300068: wheelFL
+    3300070: wheelFR
+    3300072: WheelLR
+    3300074: wheelRR
+    4300000: Plane.003
+    4300002: Plane.002
+    4300004: comp
+    4300006: FenderL
+    4300008: fenderR
+    4300010: differential
+    4300012: wheelFL
+    4300014: leafFL
+    4300016: Cylinder.007
+    4300018: WheelLR
+    4300020: posFL
+    4300022: front axle
+    4300024: wheelRR
+    4300026: wheelFR
+    4300028: fuel tank
+    4300030: horn
+    4300032: tiller
+    4300034: brakes
+    4300036: side vents
+    4300038: Plane.001
+    4300040: vents
+    4300042: hood
+    4300044: floor
+    4300046: body
+    4300048: seat
+    4300050: Cube.004
+    4300052: Cube.003
+    4300054: seat side
+    4300056: Cube.000
+    4300058: seatback
+    10800000: Point
+    10800002: Point.001
+    10800004: Point.002
+    10800006: Point.003
+    10800008: Point.004
+    10800010: Point.005
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

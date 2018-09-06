@@ -45,7 +45,7 @@ public class RideToggle : MonoBehaviour {
 	void LateUpdate () {
         if(onRide)
         {
-            if(Input.GetButtonDown("Exit"))
+            if(Input.GetButtonDown("Exit") || Input.GetButtonDown("Click"))
             {
                 onRide = false;
                 return;

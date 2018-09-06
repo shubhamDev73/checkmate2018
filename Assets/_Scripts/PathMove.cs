@@ -6,12 +6,10 @@ public class PathMove : MonoBehaviour {
     public Transform player;
     public float speed;
     public Renderer[] paths; // {right, left, up, down}
-
     public GameObject cameraTopDown, originalCamera;
 	private float cost;
     public Transform exitLocation, winPosition;
     private Vector3 startLocation;
-    private int tries;
     private bool _isPlaying;
     private bool isPlaying{
         get{return _isPlaying;}
@@ -36,7 +34,6 @@ public class PathMove : MonoBehaviour {
 
     void Reset()
     {
-        tries++;
         cost = 4;
         foreach(GameObject path in GameObject.FindGameObjectsWithTag("Wall2")){
             path.GetComponent <Renderer>().material.color = Color.white;
@@ -46,7 +43,7 @@ public class PathMove : MonoBehaviour {
 
     void Start()
     {
-        tries = 1;
+
         cost = 4;
         _isPlaying = false;
         startLocation = player.position;
@@ -66,7 +63,7 @@ public class PathMove : MonoBehaviour {
 	}
 
     void Won(){
-        GameManager.tries[2] = tries;
+        GameManager.tries[2] = (int)cost;  //NOTE TRIES[2] SIGNIFIES COST IN THAT GAME
         GameManager.solved[2] = true;
         isPlaying = false;
     }

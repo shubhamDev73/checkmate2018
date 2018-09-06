@@ -7,6 +7,7 @@ public class RodBalance : MonoBehaviour {
     private int _torque;
     public int pivot;
     public RodBalance []weights;
+    public Vector3 primaryLocation;
     public bool equipable;
     public RodBalance this[int i]{
         get{return weights[i];}
@@ -42,5 +43,14 @@ public class RodBalance : MonoBehaviour {
             }
             return _torque;
         }
+    }
+    public void calculateRotation()
+    {
+        Debug.Log(gameObject.name);
+        transform.localEulerAngles = new Vector3(0,0,-5*Mathf.Atan(torque));
+    }
+    void Start()
+    {
+        primaryLocation = transform.position;
     }
 }

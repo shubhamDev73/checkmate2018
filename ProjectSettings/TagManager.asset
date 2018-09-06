@@ -7,6 +7,8 @@ TagManager:
   - Coin
   - Wall2
   - MonkeyDoor
+  - Hook
+  - Weight
   layers:
   - Default
   - TransparentFX
@@ -18,8 +20,8 @@ TagManager:
   - 
   - PostProcessing
   - Minimap
-  - 
-  - 
+  - Hook
+  - Weight
   - 
   - 
   - 

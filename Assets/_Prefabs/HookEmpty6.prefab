@@ -125,7 +125,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24936533, y: 0.48410887, z: 0.054634318}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0.015099462, y: -0.2701355, z: 0.000000004656613}
 --- !u!114 &114040178628618886
 MonoBehaviour:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equipped: {fileID: 0}
   player: {fileID: 0}
-  mainRod: {fileID: 0}
+  rodArray: []
   torque: 0
 --- !u!114 &114323029927846022
 MonoBehaviour:

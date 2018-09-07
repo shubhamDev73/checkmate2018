@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour {
                 break;
             case 2:
                 score -= temp2;
-                score += 400 -6*tries[2];
+                score += 400 - 6*tries[2];
                 temp2 = 400 - 6*tries[2];
                 if(tries[2] <= 0){        //!!!NOTE TRIES[2] SIGNIFIES COST IN THAT GAME!!!
                     score+= 200;

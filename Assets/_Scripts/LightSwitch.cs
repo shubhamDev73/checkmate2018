@@ -30,7 +30,7 @@ public class LightSwitch : MonoBehaviour {
 	}
 
 	void OnTriggerStay (Collider col) {
-		if(!GameManager.solved[3] && col.CompareTag("Player") && rotated && Input.GetButtonDown("Click")){
+		if(!GameManager.solved[3] && col.CompareTag("Player") && rotated && Input.GetButtonDown("Click") && !GetComponent<ShowInstructions>().instructions.activeSelf){
 			lamp.intensity = initIntensity - lamp.intensity;
 			bulb.SetActive(!bulb.activeSelf);
 			StartCoroutine("RotateHandle");

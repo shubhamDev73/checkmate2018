@@ -5,6 +5,7 @@ using UnityEngine;
 public class RideToggle : MonoBehaviour {
     public Transform exitLocation, player;
     public Collider my_col;
+    private bool canRide = false;
     private bool _onRide;
     private float playerLastY;
     public bool onRide
@@ -29,27 +30,29 @@ public class RideToggle : MonoBehaviour {
         }
     }
 
-    void OnTriggerStay(Collider col)
-    {
-        if(col.CompareTag("Player") && Input.GetButtonDown("Click") && !onRide)
-        {
-            onRide = true;
-            return;
-        }
+    void OnTriggerEnter (Collider col) {
+        if(col.CompareTag("Player"))
+            canRide = true;
     }
+
+    void OnTriggerExit (Collider col) {
+        if(col.CompareTag("Player"))
+            canRide = false;
+    }
+
 	void Start () {
         _onRide = false;
 
 	}
 
-	void LateUpdate () {
-        if(onRide)
-        {
-            if(Input.GetButtonDown("Exit") || Input.GetButtonDown("Click"))
-            {
-                onRide = false;
+	void Update () {
+        if(canRide){
+            if(Input.GetButtonDown("Click")){
+                onRide = true;
                 return;
             }
         }
+        if((Input.GetButtonDown("Exit") || Input.GetButtonDown("Click")) && onRide)
+            onRide = false;
 	}
 }

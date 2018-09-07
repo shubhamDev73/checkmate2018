@@ -7,23 +7,27 @@ public class PathMove : MonoBehaviour {
     public float speed;
     public Renderer[] paths; // {right, left, up, down}
     public GameObject cameraTopDown, originalCamera;
-	private float cost;
+	public float cost;
     public Transform exitLocation, winPosition;
+    public Canvas ui;
+    private bool won = false;
     private Vector3 startLocation;
     private bool _isPlaying;
-    private bool isPlaying{
+    public bool isPlaying{
         get{return _isPlaying;}
         set{
             if(value)
             {
                 originalCamera.SetActive(false);
                 cameraTopDown.SetActive(true);
+                ui.worldCamera = cameraTopDown.GetComponent<Camera>();
                 _isPlaying = true;
             }
             else
             {
                 cameraTopDown.SetActive(false);
                 originalCamera.SetActive(true);
+                ui.worldCamera = originalCamera.GetComponent<Camera>();
                 originalCamera.transform.position = new Vector3(exitLocation.position.x, originalCamera.transform.position.y, exitLocation.position.z);
                 _isPlaying = false;
                 Reset();
@@ -52,6 +56,7 @@ public class PathMove : MonoBehaviour {
 	void OnTriggerEnter(Collider col) {
 		if(col.CompareTag("Player")){
             GameManager.solved[2] = false;
+            won = false;
             isPlaying = true;
 		}
 	}
@@ -68,12 +73,10 @@ public class PathMove : MonoBehaviour {
         isPlaying = false;
     }
     void Update () {
-        if(!isPlaying) return;
+        if(!isPlaying || GetComponent<ShowInstructions>().instructions.activeSelf) return;
         if(Input.GetButtonDown("Reset"))
         {
-
             Reset();
-
         }
         if(Input.GetButtonDown("Exit"))
         {
@@ -107,9 +110,10 @@ public class PathMove : MonoBehaviour {
                 cost /= 2;
             }
         }
-        if((winPosition.position - player.position).sqrMagnitude <0.1f)
+        if((winPosition.position - player.position).sqrMagnitude <0.1f && !won)
         {
             StartCoroutine(DelayAndWin());
+            won = true;
         }
     }
     IEnumerator DelayAndWin()

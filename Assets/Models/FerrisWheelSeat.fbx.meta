@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 308486b8d49d51f49be21fdf975150f5
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -14,7 +14,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: FerrisWheelSeat
-    second: {fileID: 2100000, guid: 57e939cfd727fe8468a541c7f1f8735d, type: 2}
+    second: {fileID: 2100000, guid: d5b2710a15f8dea42bb33bf446ac8feb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,6 +65,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

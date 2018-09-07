@@ -40,7 +40,7 @@ public class UpRide : MonoBehaviour {
             }else
             {
                 velocity -= 0.01f;
-                if(transform.position.y <= 1f)
+                if(transform.position.y <= 2f)
                 {
                     goingUp = true;
                 }

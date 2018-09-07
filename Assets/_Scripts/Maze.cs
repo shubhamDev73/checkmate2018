@@ -10,6 +10,7 @@ public class Maze : MonoBehaviour {
     public GameObject cameraTopDown;
     public GameObject originalCamera;
     public MazeWin mazeWin;
+    public Canvas ui;
 	private bool chance;
     private bool buttonChangedX , buttonChangedY;
 	private int monkeyTurnsLeft;
@@ -35,12 +36,14 @@ public class Maze : MonoBehaviour {
         {
             originalCamera.SetActive(false);
             cameraTopDown.SetActive(true);
+            ui.worldCamera = cameraTopDown.GetComponent<Camera>();
             isPlaying = true;
         }
         else
         {
             cameraTopDown.SetActive(false);
             originalCamera.SetActive(true);
+            ui.worldCamera = cameraTopDown.GetComponent<Camera>();
             originalCamera.transform.position = new Vector3(exitLocation.position.x, originalCamera.transform.position.y, exitLocation.position.z);
             isPlaying = false;
             reset();
@@ -58,7 +61,7 @@ public class Maze : MonoBehaviour {
         Start();
     }
 	void Update () {
-        if(isPlaying){
+        if(isPlaying && !GetComponent<ShowInstructions>().instructions.activeSelf){
             if(Input.GetButtonDown("Reset")){
                 reset();
                 return;

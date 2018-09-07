@@ -6,8 +6,10 @@ public class BullRide : MonoBehaviour {
     public Transform player;
     public RideToggle script;
     public float delay;
+    public GameObject bullUI;
     private int nextChoice;
     private float currentDelay;
+    private Vector3 initRot;
     private bool _rideStart;
     private bool rideStart
     {
@@ -15,10 +17,13 @@ public class BullRide : MonoBehaviour {
         set {
             _rideStart = value;
             if(_rideStart){
-                transform.rotation = Quaternion.Euler(0,180,0);
+                initRot = transform.localEulerAngles;
                 currentDelay = delay;
+                bullUI.SetActive(true);
             }
             else{
+                bullUI.SetActive(false);
+                transform.localEulerAngles = initRot;
                 script.onRide = false;
             }
         }
@@ -26,10 +31,10 @@ public class BullRide : MonoBehaviour {
     IEnumerator BullGame()
     {
         float timeLeft = delay;
+        timeLeft = getNextTime();
         while(timeLeft > 0)
         {
-            Debug.Log(choices[nextChoice]);
-            transform.rotation = Quaternion.Euler(0,0,Mathf.PingPong(Time.time*50,90)-45);
+            transform.localEulerAngles = new Vector3(0, 0, Mathf.PingPong(Time.time*20/(timeLeft/delay + 0.3f), 150)-75);
             player.position = transform.GetChild(0).position;
             if(Input.GetButtonDown(choices[nextChoice]))
             {
@@ -45,7 +50,14 @@ public class BullRide : MonoBehaviour {
     }
     float getNextTime()
     {
-        nextChoice = Random.Range(0, choices.Length);
+        int temp = nextChoice;
+        do{
+            nextChoice = Random.Range(0, choices.Length);
+        }while(nextChoice == temp);
+        for(int i = 0; i < 4; i++){
+            bullUI.transform.GetChild(i).gameObject.SetActive(false);
+        }
+        bullUI.transform.GetChild(nextChoice).gameObject.SetActive(true);
         currentDelay /= 1.2f;
         currentDelay = Mathf.Clamp(currentDelay,0.5f,delay);
         return currentDelay;

@@ -28,7 +28,7 @@ public class Gate : MonoBehaviour {
 
 	IEnumerator ShowInstructions () {
 		yield return new WaitForSeconds(0.25f);
-		FindObjectOfType<UI>().Display(0);
+		FindObjectOfType<UI>().Display(0, new string[] {"Instructions"}, new string[] {"I"});
 	}
 
 }

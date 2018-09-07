@@ -9,7 +9,7 @@ public class Balance : MonoBehaviour {
     private int _coins;
     private bool skeleWon;
     private bool canUpdate;
-    private int coins
+    public int coins
     {
         get{return _coins;}
         set{
@@ -17,14 +17,13 @@ public class Balance : MonoBehaviour {
             StartCoroutine(CalculateScale());
         }
     }
-    private bool chance
+    public bool chance
     {
         get{return _chance;}
         set{
             _chance = value;
             if(!GameManager.solved[4] && !_chance)
             {
-
                 StartCoroutine(Delay(2));
             }
         }
@@ -37,7 +36,7 @@ public class Balance : MonoBehaviour {
 
 	void Reset () {
         // add visual indicator that you have lost
-        _chance =false;
+        _chance = false;
         skeleWon = false;
 		coins = totalCoins;
         StartCoroutine(CalculateScale());
@@ -55,19 +54,6 @@ public class Balance : MonoBehaviour {
             canUpdate = true;
         }
     }
-    void Update(){
-        if(!GameManager.solved[4] && canUpdate && chance){
-            if(Input.GetButtonDown("Increment")) moveCoins++;
-            if(Input.GetButtonDown("Decrement")) moveCoins--;
-            moveCoins = Mathf.Clamp(moveCoins, 1, 4);
-            FindObjectOfType<UI>().DisplayText(moveCoins);
-            if(Input.GetButtonDown("Click")){
-                coins -= moveCoins;
-                coins = Mathf.Clamp(coins, 0, totalCoins);
-                chance = false;
-            }
-        }
-    }
     IEnumerator Delay(float time)
     {
         yield return new WaitForSeconds(time);
@@ -76,7 +62,6 @@ public class Balance : MonoBehaviour {
 	void OnTriggerExit (Collider col) {
 		if(!GameManager.solved[4] && col.CompareTag("Player")){
 			canUpdate = false;
-			FindObjectOfType<UI>().DisplayText(0);
 		}
 	}
 	IEnumerator CalculateScale () {
@@ -89,8 +74,6 @@ public class Balance : MonoBehaviour {
 			else coin.GetComponent<Coin>().scale = transform.GetChild(0).GetChild(1);
 			n++;
 		}
-		transform.GetChild(0).GetChild(0).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + coins.ToString()));
-		transform.GetChild(0).GetChild(1).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + (totalCoins - coins).ToString()));
         if(_coins == totalCoins / 2){
             if(chance){
                 GameManager.tries[4] = tries;
@@ -104,33 +87,3 @@ public class Balance : MonoBehaviour {
             Reset();
 	}
 }
-
-    // IEnumerator PlayGame(float time)
-    // {
-    //     while(!GameManager.solved[4]){
-    //         StartCoroutine(PlayerMove());
-    //         SkeleMove();
-    //         yield return new WaitForSeconds(time);
-    //     }
-    // }
-    // IEnumerator PlayerMove()
-    // {
-    //     while(true){
-    //         if(canIncrement){
-    //             if(Input.GetButtonDown("Increment")) moveCoins++;
-    //             if(Input.GetButtonDown("Decrement")) moveCoins--;
-    //             moveCoins = Mathf.Clamp(moveCoins, 1, 4);
-    //             FindObjectOfType<UI>().DisplayText(moveCoins);
-    //             if(Input.GetButtonDown("Click")){
-    //                 coins -= moveCoins;
-    //                 coins = Mathf.Clamp(coins, 0, totalCoins);
-    //                 return;
-    //             }
-    //         }
-    //         yield return null;
-    //     }
-    // }
-	// void OnTriggerEnter (Collider col) {
-	// 	if(!GameManager.solved[4] && col.CompareTag("Player"))
-	// 		canIncrement = true;
-	// }

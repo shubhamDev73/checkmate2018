@@ -119,11 +119,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
     type: 2}
   m_PrefabInternal: {fileID: 1953400228}
---- !u!1 &1101338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 2022347242}
 --- !u!1001 &1163139
 Prefab:
   m_ObjectHideFlags: 0
@@ -175,11 +170,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1163140 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1163139}
 --- !u!4 &2283507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
@@ -1062,11 +1052,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400560, guid: 86092873732a1534aa442eb0b0710a9a,
     type: 3}
   m_PrefabInternal: {fileID: 100036071}
---- !u!1 &21068672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1698119475}
 --- !u!1 &22068524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,15 +1131,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &23298879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1882,15 +1867,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &36253240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2319,7 +2304,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &40627840
 Prefab:
@@ -3104,10 +3089,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -3737,11 +3722,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &70652816 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 70652815}
 --- !u!1 &72047776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,10 +3767,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -4724,15 +4704,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &102075691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5206,7 +5186,7 @@ Transform:
   - {fileID: 591916132}
   - {fileID: 906187049}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &118643939
 GameObject:
@@ -5592,7 +5572,7 @@ Transform:
   - {fileID: 264489056}
   - {fileID: 1864653623}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &126139323 stripped
 Transform:
@@ -5988,7 +5968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 341005771}
+  parent: {fileID: 0}
   location: 0
   occupied: 0
 --- !u!23 &132218516
@@ -7100,15 +7080,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &168693568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7243,11 +7223,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170488917}
   m_Mesh: {fileID: 4300014, guid: 1f1236018954c4e38b9d433972b62937, type: 3}
---- !u!1 &171929248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1887724716}
 --- !u!4 &172063560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
@@ -7358,11 +7333,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c60f2dc7931cea148bd56987548fca00, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &174484561 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 398433436}
 --- !u!1001 &177101157
 Prefab:
   m_ObjectHideFlags: 0
@@ -7667,10 +7637,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -8586,12 +8556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 277808426}
-  speed: 5
-  paths:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  speed: 0
+  paths: []
   cameraTopDown: {fileID: 37786326}
   originalCamera: {fileID: 241494631}
   exitLocation: {fileID: 1677716058}
@@ -8608,7 +8574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2be588c52ba4c34b8091812e9403ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniGame: 2
+  miniGame: 0
   scripts: []
 --- !u!65 &205429729
 BoxCollider:
@@ -9027,10 +8993,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -9078,11 +9044,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &215552319 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1546500866}
 --- !u!1 &216131375
 GameObject:
   m_ObjectHideFlags: 0
@@ -9683,8 +9644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374939c079499498abeb2cb09365f060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAngleY: 45
-  speed: 0.05
+  maxAngleY: 0
+  speed: 0
 --- !u!4 &241494633
 Transform:
   m_ObjectHideFlags: 0
@@ -10040,14 +10001,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2037394eaba2444d883dad08ca2b89a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices:
-  - 
-  - 
-  - 
-  - 
-  player: {fileID: 241494633}
-  script: {fileID: 316483106}
-  delay: 6
+  choices: []
+  player: {fileID: 0}
+  script: {fileID: 0}
+  delay: 0
 --- !u!1001 &260231706
 Prefab:
   m_ObjectHideFlags: 0
@@ -11631,15 +11588,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &298435622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12218,8 +12175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae89cdcf4497346188fecbf5f7c2011c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitLocation: {fileID: 412137635}
-  player: {fileID: 241494633}
+  exitLocation: {fileID: 0}
+  player: {fileID: 0}
   my_col: {fileID: 0}
 --- !u!1001 &317998316
 Prefab:
@@ -12383,11 +12340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c4cd036b1ba4caeab8ca06da13a2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 1
-  anim: {fileID: 1220567068}
-  skeletonPrefab: {fileID: 1532619732000646, guid: 6ba2fce46760adc4aa737f4c94caf9a2,
-    type: 2}
-  player: {fileID: 241494633}
+  doorId: 0
+  anim: {fileID: 0}
+  skeletonPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!65 &327186284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13009,12 +12965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b803114e35a5d46f4b1741694236d52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivot: 1
-  weights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  pivot: 0
+  weights: []
   primaryLocation: {x: 0, y: 0, z: 0}
   equipable: 0
 --- !u!1001 &342424464
@@ -13266,15 +13218,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &348133531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13886,15 +13838,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &367179564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14002,10 +13954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -15174,10 +15126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -15769,15 +15721,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &431970790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16541,10 +16493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b3fd5ad378346c2ba4a568383250b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 787537772}
-  player: {fileID: 241494633}
-  omega: 1
-  thetaMax: 45
+  script: {fileID: 0}
+  player: {fileID: 0}
+  omega: 0
+  thetaMax: 0
 --- !u!4 &470942581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
@@ -17213,15 +17165,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &487051354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17434,15 +17386,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &490589707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17638,15 +17590,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &493873857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17909,15 +17861,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &500987709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18439,15 +18391,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &516746220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19238,15 +19190,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &540091120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19577,15 +19529,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &544231275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19903,15 +19855,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &547532803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20551,7 +20503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: c451b4b851aec2b4686f3e9025673ed7, type: 2}
+  profile: {fileID: 0}
 --- !u!81 &564892817
 AudioListener:
   m_ObjectHideFlags: 0
@@ -20624,7 +20576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Resolution: 1
-  DefaultSpotCookie: {fileID: 2800000, guid: 647fb2f4cca357a4cba37ab7d324f4ea, type: 3}
+  DefaultSpotCookie: {fileID: 0}
 --- !u!82 &564892821
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21516,11 +21468,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &591919051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 591919050}
 --- !u!1 &597592025
 GameObject:
   m_ObjectHideFlags: 0
@@ -21605,15 +21552,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &599915812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22069,15 +22016,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &605861373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22185,10 +22132,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -22511,15 +22458,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &618545675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24755,9 +24702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae89cdcf4497346188fecbf5f7c2011c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitLocation: {fileID: 212197781}
-  player: {fileID: 241494633}
-  my_col: {fileID: 696186145}
+  exitLocation: {fileID: 0}
+  player: {fileID: 0}
+  my_col: {fileID: 0}
 --- !u!114 &696186143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24769,23 +24716,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e01b0b92ed95425e9bed7663cfaf3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seats:
-  - {fileID: 1775287445}
-  - {fileID: 1163140}
-  - {fileID: 726694007}
-  - {fileID: 914280974}
-  - {fileID: 1743903551}
-  - {fileID: 1408172200}
-  - {fileID: 1334466364}
-  - {fileID: 1174596503}
-  - {fileID: 70652816}
-  - {fileID: 591919051}
-  - {fileID: 1982850505}
-  - {fileID: 1455589010}
-  script: {fileID: 696186142}
-  player: {fileID: 241494633}
-  maxSpeed: 0.5
-  minSpeed: 0.01
+  seats: []
+  script: {fileID: 0}
+  player: {fileID: 0}
+  maxSpeed: 0
+  minSpeed: 0
 --- !u!65 &696186144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25701,19 +25636,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 1
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
   MieG: 0.1
-  HeightFog: 1
-  HeightScale: 0.3
+  HeightFog: 0
+  HeightScale: 0.1
   GroundLevel: 0
-  Noise: 1
-  NoiseScale: 0.1
-  NoiseIntensity: 4
+  Noise: 0
+  NoiseScale: 0.015
+  NoiseIntensity: 1
   NoiseIntensityOffset: 0.3
-  NoiseVelocity: {x: 1, y: 1}
-  MaxRayLength: 100
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!1 &715826149
 GameObject:
   m_ObjectHideFlags: 0
@@ -26116,11 +26051,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &726694007 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 726694006}
 --- !u!1001 &727491135
 Prefab:
   m_ObjectHideFlags: 0
@@ -26583,11 +26513,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c4cd036b1ba4caeab8ca06da13a2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 5
-  anim: {fileID: 34411854}
-  skeletonPrefab: {fileID: 1532619732000646, guid: 6ba2fce46760adc4aa737f4c94caf9a2,
-    type: 2}
-  player: {fileID: 241494633}
+  doorId: 0
+  anim: {fileID: 0}
+  skeletonPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!65 &742345517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27257,16 +27186,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c60f2dc7931cea148bd56987548fca00, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &772591287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100560, guid: 86092873732a1534aa442eb0b0710a9a,
-    type: 3}
-  m_PrefabInternal: {fileID: 1827950578}
---- !u!95 &772591288 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 86092873732a1534aa442eb0b0710a9a,
-    type: 3}
-  m_PrefabInternal: {fileID: 1827950578}
 --- !u!4 &772591289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400560, guid: 86092873732a1534aa442eb0b0710a9a,
@@ -27410,15 +27329,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &774106445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27855,8 +27774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1174541229}
-  location: 4
+  parent: {fileID: 0}
+  location: 0
   occupied: 0
 --- !u!23 &781476364
 MeshRenderer:
@@ -28019,7 +27938,7 @@ Transform:
   - {fileID: 1344999058}
   - {fileID: 1539744757}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!65 &786885124
 BoxCollider:
@@ -28173,9 +28092,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae89cdcf4497346188fecbf5f7c2011c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitLocation: {fileID: 877939008}
-  player: {fileID: 241494633}
-  my_col: {fileID: 787537773}
+  exitLocation: {fileID: 0}
+  player: {fileID: 0}
+  my_col: {fileID: 0}
 --- !u!65 &787537773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28458,11 +28377,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c4cd036b1ba4caeab8ca06da13a2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 4
-  anim: {fileID: 752861172}
-  skeletonPrefab: {fileID: 1532619732000646, guid: 6ba2fce46760adc4aa737f4c94caf9a2,
-    type: 2}
-  player: {fileID: 241494633}
+  doorId: 0
+  anim: {fileID: 0}
+  skeletonPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!65 &793623956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29328,7 +29246,7 @@ RectTransform:
   - {fileID: 2090216885}
   - {fileID: 1040010239}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -29346,18 +29264,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b20da7907214c1d44bee1e5948773927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 241494633}
-  startPoint: {fileID: 572554617}
+  cam: {fileID: 0}
+  startPoint: {fileID: 0}
   ipText: {fileID: 0}
   usernameText: {fileID: 0}
   passwordText: {fileID: 0}
   idText: {fileID: 0}
-  scoreText: {fileID: 546847941}
-  timeText: {fileID: 600099902}
-  instructionsText: {fileID: 1306962900}
-  gameElementsText: {fileID: 1301287438}
-  skeleton: {fileID: 772591287}
-  okButton: {fileID: 9680303}
+  scoreText: {fileID: 0}
+  timeText: {fileID: 0}
+  instructionsText: {fileID: 0}
+  gameElementsText: {fileID: 0}
+  skeleton: {fileID: 0}
+  okButton: {fileID: 0}
 --- !u!4 &814362274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4417811299072880, guid: 4ced8715b4c88d341952ff2ab61cd6e8,
@@ -29642,15 +29560,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &825823358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29847,11 +29765,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
     type: 2}
   m_PrefabInternal: {fileID: 832402606}
---- !u!1 &834355944 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1263349141}
 --- !u!1001 &835522882
 Prefab:
   m_ObjectHideFlags: 0
@@ -30244,23 +30157,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4342c2e25fa24dd48812850c5e47b0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1948747231}
-  monkey: {fileID: 284666729}
-  exitLocation: {fileID: 917668520}
-  speed: 2
-  maxMonkeyTurns: 2
+  player: {fileID: 0}
+  monkey: {fileID: 0}
+  exitLocation: {fileID: 0}
+  speed: 0
+  maxMonkeyTurns: 0
   isPlaying: 0
-  pCanMoveRight: 1
-  pCanMoveLeft: 1
-  pCanMoveUp: 1
-  pCanMoveDown: 1
-  mCanMoveRight: 1
-  mCanMoveLeft: 1
-  mCanMoveUp: 1
-  mCanMoveDown: 1
-  cameraTopDown: {fileID: 26466733}
-  originalCamera: {fileID: 241494631}
-  mazeWin: {fileID: 1819347106}
+  pCanMoveRight: 0
+  pCanMoveLeft: 0
+  pCanMoveUp: 0
+  pCanMoveDown: 0
+  mCanMoveRight: 0
+  mCanMoveLeft: 0
+  mCanMoveUp: 0
+  mCanMoveDown: 0
+  cameraTopDown: {fileID: 0}
+  originalCamera: {fileID: 0}
+  mazeWin: {fileID: 0}
 --- !u!114 &854765613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30273,7 +30186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2be588c52ba4c34b8091812e9403ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniGame: 5
+  miniGame: 0
   scripts: []
 --- !u!65 &854765614
 BoxCollider:
@@ -31275,15 +31188,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &887129527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32496,11 +32409,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &914280974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 914280973}
 --- !u!1001 &914662436
 Prefab:
   m_ObjectHideFlags: 0
@@ -32766,8 +32674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc224815fa1f74f2c8e5a401722eec80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 1345094495}
-  player: {fileID: 241494633}
+  script: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &919022114
 GameObject:
   m_ObjectHideFlags: 0
@@ -33854,11 +33762,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
     type: 2}
   m_PrefabInternal: {fileID: 628758461}
---- !u!1 &959262381 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 331000091}
 --- !u!1001 &962581668
 Prefab:
   m_ObjectHideFlags: 0
@@ -33955,10 +33858,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -34328,15 +34231,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &979084891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34555,15 +34458,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &983152622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34970,7 +34873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1410373007}
+  parent: {fileID: 0}
   location: 0
   occupied: 0
 --- !u!23 &1004607652
@@ -35812,11 +35715,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1032182942}
   m_Mesh: {fileID: 4300000, guid: f26fb823d1987a84db94b9d3a41937c1, type: 3}
---- !u!1 &1032904400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 891106918}
 --- !u!1001 &1033143685
 Prefab:
   m_ObjectHideFlags: 0
@@ -36082,10 +35980,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b3fd5ad378346c2ba4a568383250b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 1037068981}
-  player: {fileID: 241494633}
-  omega: 1
-  thetaMax: 45
+  script: {fileID: 0}
+  player: {fileID: 0}
+  omega: 0
+  thetaMax: 0
 --- !u!114 &1037068981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36097,9 +35995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae89cdcf4497346188fecbf5f7c2011c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitLocation: {fileID: 1019880775}
-  player: {fileID: 241494633}
-  my_col: {fileID: 1037068983}
+  exitLocation: {fileID: 0}
+  player: {fileID: 0}
+  my_col: {fileID: 0}
 --- !u!65 &1037068982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37562,11 +37460,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
     type: 2}
   m_PrefabInternal: {fileID: 727491135}
---- !u!95 &1089305736 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: eeb6d9d0ebdc1c74595a3c44fac7e0d3,
-    type: 3}
-  m_PrefabInternal: {fileID: 342424464}
 --- !u!1 &1090278109
 GameObject:
   m_ObjectHideFlags: 0
@@ -37785,15 +37678,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1090995585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39009,15 +38902,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1113114125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39472,15 +39365,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1131884044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39598,8 +39491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1174541229}
-  location: 3
+  parent: {fileID: 0}
+  location: 0
   occupied: 0
 --- !u!23 &1132031462
 MeshRenderer:
@@ -40508,10 +40401,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorId: 0
-  anim: {fileID: 1749690775}
-  skeletonPrefab: {fileID: 1532619732000646, guid: 6ba2fce46760adc4aa737f4c94caf9a2,
-    type: 2}
-  player: {fileID: 241494633}
+  anim: {fileID: 0}
+  skeletonPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!65 &1162992094
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40823,7 +40715,7 @@ Transform:
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1168964289
 Prefab:
@@ -41173,14 +41065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b803114e35a5d46f4b1741694236d52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivot: 2
-  weights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  pivot: 0
+  weights: []
   primaryLocation: {x: 0, y: 0, z: 0}
   equipable: 0
 --- !u!1001 &1174596502
@@ -41234,11 +41120,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1174596503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1174596502}
 --- !u!1001 &1175245013
 Prefab:
   m_ObjectHideFlags: 0
@@ -41437,15 +41318,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1178898912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42388,7 +42269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4417811299072880, guid: 4ced8715b4c88d341952ff2ab61cd6e8, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1214853351274366, guid: 4ced8715b4c88d341952ff2ab61cd6e8, type: 2}
       propertyPath: m_Name
@@ -43141,15 +43022,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1227024054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43343,9 +43224,9 @@ Transform:
   m_LocalPosition: {x: 17.5, y: 0.1, z: 13}
   m_LocalScale: {x: 3, y: 1, z: 7}
   m_Children:
-  - {fileID: 1364760380}
   - {fileID: 1491250810}
   - {fileID: 1209489921}
+  - {fileID: 1364760380}
   - {fileID: 1031970159}
   - {fileID: 1893629378}
   - {fileID: 40627841}
@@ -43357,7 +43238,7 @@ Transform:
   - {fileID: 814362274}
   - {fileID: 1333075663}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 200, z: 0}
 --- !u!82 &1231008986
 AudioSource:
@@ -43911,10 +43792,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -44444,15 +44325,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1254288400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45635,15 +45516,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1300650542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45852,11 +45733,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1302445479}
   m_Mesh: {fileID: 4300000, guid: 14da58f784690c24eb60cd0b547f2407, type: 3}
---- !u!95 &1304743124 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 14a0f1ae424264149a33cd9d1a85d7a3,
-    type: 3}
-  m_PrefabInternal: {fileID: 764272054}
 --- !u!1 &1306620564
 GameObject:
   m_ObjectHideFlags: 0
@@ -46533,7 +46409,7 @@ Transform:
   - {fileID: 772591289}
   - {fileID: 20757547}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &1332460914 stripped
 Transform:
@@ -46630,11 +46506,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1334466364 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1334466363}
 --- !u!1 &1335387248
 GameObject:
   m_ObjectHideFlags: 0
@@ -47074,9 +46945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae89cdcf4497346188fecbf5f7c2011c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitLocation: {fileID: 1723177020}
-  player: {fileID: 241494633}
-  my_col: {fileID: 1345094494}
+  exitLocation: {fileID: 0}
+  player: {fileID: 0}
+  my_col: {fileID: 0}
 --- !u!136 &1345094496
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47577,7 +47448,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4417811299072880, guid: 4ced8715b4c88d341952ff2ab61cd6e8, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1214853351274366, guid: 4ced8715b4c88d341952ff2ab61cd6e8, type: 2}
       propertyPath: m_Name
@@ -47735,8 +47606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 341005771}
-  location: 2
+  parent: {fileID: 0}
+  location: 0
   occupied: 0
 --- !u!23 &1371215225
 MeshRenderer:
@@ -47892,14 +47763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2be588c52ba4c34b8091812e9403ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniGame: 1
-  scripts:
-  - {fileID: 1162992093}
-  - {fileID: 327186283}
-  - {fileID: 1936111135}
-  - {fileID: 1899823162}
-  - {fileID: 793623955}
-  - {fileID: 742345516}
+  miniGame: 0
+  scripts: []
 --- !u!65 &1378519006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48948,11 +48813,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1408172200 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1408172199}
 --- !u!1001 &1409252890
 Prefab:
   m_ObjectHideFlags: 0
@@ -49049,12 +48909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b803114e35a5d46f4b1741694236d52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivot: 2
-  weights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 341005771}
+  pivot: 0
+  weights: []
   primaryLocation: {x: 0, y: 0, z: 0}
   equipable: 0
 --- !u!1001 &1410737731
@@ -49420,15 +49276,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1418750759
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49610,8 +49466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6f1d69952a0374d993a606be0a128b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 1953464822481272, guid: 61742fd6fd8c70241b5459f81c51826e, type: 2}
-  totalCoins: 42
+  coinPrefab: {fileID: 0}
+  totalCoins: 0
 --- !u!65 &1423296046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50419,9 +50275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae89cdcf4497346188fecbf5f7c2011c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitLocation: {fileID: 253229988}
-  player: {fileID: 241494633}
-  my_col: {fileID: 1446608813}
+  exitLocation: {fileID: 0}
+  player: {fileID: 0}
+  my_col: {fileID: 0}
 --- !u!65 &1446608813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50666,11 +50522,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1455589010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1455589009}
 --- !u!4 &1455786649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
@@ -51034,15 +50885,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1477869547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51447,7 +51298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4417811299072880, guid: 4ced8715b4c88d341952ff2ab61cd6e8, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1214853351274366, guid: 4ced8715b4c88d341952ff2ab61cd6e8, type: 2}
       propertyPath: m_Name
@@ -52164,23 +52015,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e01b0b92ed95425e9bed7663cfaf3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seats:
-  - {fileID: 171929248}
-  - {fileID: 215552319}
-  - {fileID: 1555205150}
-  - {fileID: 959262381}
-  - {fileID: 1101338}
-  - {fileID: 1809280394}
-  - {fileID: 1640011593}
-  - {fileID: 174484561}
-  - {fileID: 834355944}
-  - {fileID: 21068672}
-  - {fileID: 2117251043}
-  - {fileID: 1032904400}
-  script: {fileID: 1446608812}
-  player: {fileID: 241494633}
-  maxSpeed: 0.5
-  minSpeed: 0.01
+  seats: []
+  script: {fileID: 0}
+  player: {fileID: 0}
+  maxSpeed: 0
+  minSpeed: 0
 --- !u!1 &1519508450
 GameObject:
   m_ObjectHideFlags: 0
@@ -52572,8 +52411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1174541229}
-  location: 5
+  parent: {fileID: 0}
+  location: 0
   occupied: 0
 --- !u!23 &1521550696
 MeshRenderer:
@@ -53864,11 +53703,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1555205150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1338161319}
 --- !u!1 &1556640222
 GameObject:
   m_ObjectHideFlags: 0
@@ -53963,11 +53797,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f38f103ee7248e4ba7ddc2e340a41fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gateLeft: {fileID: 1089305736}
-  gateRight: {fileID: 1304743124}
-  skeleton: {fileID: 772591288}
-  player: {fileID: 241494633}
-  bgm: {fileID: 564892822}
+  gateLeft: {fileID: 0}
+  gateRight: {fileID: 0}
+  skeleton: {fileID: 0}
+  player: {fileID: 0}
+  bgm: {fileID: 0}
 --- !u!65 &1557050534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54026,15 +53860,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1558206400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54138,15 +53972,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1558817907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54250,15 +54084,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1561833353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54427,7 +54261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1174541229}
+  parent: {fileID: 0}
   location: 0
   occupied: 0
 --- !u!23 &1563774469
@@ -54528,15 +54362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b803114e35a5d46f4b1741694236d52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivot: 3
-  weights:
-  - {fileID: 1174541229}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1410373007}
+  pivot: 0
+  weights: []
   primaryLocation: {x: 0, y: 0, z: 0}
   equipable: 0
 --- !u!1 &1570585352
@@ -54585,15 +54412,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1570585355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55087,10 +54914,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -55266,8 +55093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7521045e1648d19c59f6ce8cfe984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 341005771}
-  location: 3
+  parent: {fileID: 0}
+  location: 0
   occupied: 0
 --- !u!23 &1584885089
 MeshRenderer:
@@ -57008,11 +56835,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
     type: 2}
   m_PrefabInternal: {fileID: 297160821}
---- !u!1 &1640011593 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 102451180}
 --- !u!1 &1642587879
 GameObject:
   m_ObjectHideFlags: 0
@@ -57999,7 +57821,7 @@ Transform:
   m_LocalScale: {x: 30, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1684686855 stripped
 Transform:
@@ -58221,15 +58043,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1688452519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59393,15 +59215,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1730447261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59907,11 +59729,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1743903551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1743903550}
 --- !u!4 &1744386178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,
@@ -61116,11 +60933,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1775287445 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1775287444}
 --- !u!1 &1775329899
 GameObject:
   m_ObjectHideFlags: 0
@@ -61547,7 +61359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.25
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
   MieG: 0.1
@@ -61649,15 +61461,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1787165288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62100,7 +61912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050c65173d1ab499481b9b923c1da126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myLight: {fileID: 1808312463}
+  myLight: {fileID: 0}
 --- !u!108 &1808312463
 Light:
   m_ObjectHideFlags: 0
@@ -62151,11 +61963,6 @@ Transform:
   m_Father: {fileID: 20757547}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1809280394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1510555323}
 --- !u!1 &1816225587
 GameObject:
   m_ObjectHideFlags: 0
@@ -62339,7 +62146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a5f1223d16b45e1b7e0d172471a30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
+  script: {fileID: 0}
   tries: 0
 --- !u!65 &1819347107
 BoxCollider:
@@ -62590,18 +62397,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights:
-  - {fileID: 1364760380}
+  - {fileID: 814362274}
   - {fileID: 2129650592}
   - {fileID: 474092187}
-  - {fileID: 814362274}
-  - {fileID: 1491250810}
-  - {fileID: 1209489921}
-  - {fileID: 1031970159}
-  - {fileID: 1893629378}
-  - {fileID: 40627841}
-  - {fileID: 1998765489}
-  - {fileID: 1784062264}
   - {fileID: 1530688919}
+  - {fileID: 1784062264}
+  - {fileID: 1998765489}
+  - {fileID: 40627841}
+  - {fileID: 1893629378}
+  - {fileID: 1031970159}
+  - {fileID: 1364760380}
+  - {fileID: 1209489921}
+  - {fileID: 1491250810}
 --- !u!114 &1821287815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62614,20 +62421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2be588c52ba4c34b8091812e9403ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniGame: 3
-  scripts:
-  - {fileID: 70153603}
-  - {fileID: 736254100}
-  - {fileID: 1970516160}
-  - {fileID: 852252273}
-  - {fileID: 2017127223}
-  - {fileID: 1237508540}
-  - {fileID: 540866719}
-  - {fileID: 495646416}
-  - {fileID: 1616523904}
-  - {fileID: 1606867513}
-  - {fileID: 2092443255}
-  - {fileID: 1703085519}
+  miniGame: 0
+  scripts: []
 --- !u!65 &1821287816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63766,10 +63561,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -65568,11 +65363,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c4cd036b1ba4caeab8ca06da13a2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 3
-  anim: {fileID: 708614991}
-  skeletonPrefab: {fileID: 1532619732000646, guid: 6ba2fce46760adc4aa737f4c94caf9a2,
-    type: 2}
-  player: {fileID: 241494633}
+  doorId: 0
+  anim: {fileID: 0}
+  skeletonPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!65 &1899823163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66672,11 +66466,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c4cd036b1ba4caeab8ca06da13a2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorId: 2
-  anim: {fileID: 1745150678}
-  skeletonPrefab: {fileID: 1532619732000646, guid: 6ba2fce46760adc4aa737f4c94caf9a2,
-    type: 2}
-  player: {fileID: 241494633}
+  doorId: 0
+  anim: {fileID: 0}
+  skeletonPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!65 &1936111136
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67761,10 +67554,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SampleCount: 8
-  ScatteringCoef: 0.6
+  ScatteringCoef: 0.5
   ExtinctionCoef: 0.01
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.5
+  MieG: 0.1
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -67896,11 +67689,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f43dadfe4194a3aa7148dd94416c71, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1982850505 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 1982850504}
 --- !u!1 &1983476100
 GameObject:
   m_ObjectHideFlags: 0
@@ -67947,15 +67735,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1983476103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68358,15 +68146,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &1992234507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68605,11 +68393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2be588c52ba4c34b8091812e9403ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniGame: 4
-  scripts:
-  - {fileID: 1423296045}
-  - {fileID: 1121516107}
-  - {fileID: 803308775}
+  miniGame: 0
+  scripts: []
 --- !u!65 &1999677179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68783,15 +68568,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &2001344052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71054,15 +70839,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &2074014338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71337,12 +71122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipped: {fileID: 0}
-  player: {fileID: 241494633}
-  rodArray:
-  - {fileID: 1565124270}
-  - {fileID: 1174541229}
-  - {fileID: 1410373007}
-  - {fileID: 341005771}
+  player: {fileID: 0}
+  rodArray: []
   torque: 0
 --- !u!65 &2077386602
 BoxCollider:
@@ -71683,7 +71464,7 @@ Transform:
   m_LocalScale: {x: 30, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083770564
 GameObject:
@@ -72438,15 +72219,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09828b4823c158b4cb75c20afadc3f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 854765612}
-  pColliderRight: {fileID: 1948747236}
-  pColliderLeft: {fileID: 1948747235}
-  pColliderUp: {fileID: 1948747234}
-  pColliderDown: {fileID: 1948747233}
-  mColliderRight: {fileID: 284666734}
-  mColliderLeft: {fileID: 284666733}
-  mColliderUp: {fileID: 284666732}
-  mColliderDown: {fileID: 284666731}
+  script: {fileID: 0}
+  pColliderRight: {fileID: 0}
+  pColliderLeft: {fileID: 0}
+  pColliderUp: {fileID: 0}
+  pColliderDown: {fileID: 0}
+  mColliderRight: {fileID: 0}
+  mColliderLeft: {fileID: 0}
+  mColliderUp: {fileID: 0}
+  mColliderDown: {fileID: 0}
 --- !u!65 &2103429525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72781,11 +72562,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b798454e39b6da40babbe3e979ba091, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &2117251043 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1683101979343514, guid: 87f43dadfe4194a3aa7148dd94416c71,
-    type: 2}
-  m_PrefabInternal: {fileID: 76719355}
 --- !u!4 &2118609397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795521574562472, guid: c60f2dc7931cea148bd56987548fca00,

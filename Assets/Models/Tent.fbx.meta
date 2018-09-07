@@ -5,7 +5,8 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Tent
+    2100000: TentWhite
+    2100002: TentOrange
     2300000: //RootNode
     3300000: //RootNode
     4300000: Tent
@@ -13,8 +14,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tent
-    second: {fileID: 2100000, guid: 1a47b80bf08565b41a104d729b47e466, type: 2}
+      name: TentOrange
+    second: {fileID: 2100000, guid: 55a55256e33ffa844aea336412cce1ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TentWhite
+    second: {fileID: 2100000, guid: 6d4774d8baf49ac41877ca646b1b4a50, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

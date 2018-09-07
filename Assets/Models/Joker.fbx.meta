@@ -1,38 +1,55 @@
 fileFormatVersion: 2
-guid: 9ce3d3529cf059f41ab9424a459d6901
+guid: 239efe8104cc11d4abeaa062b58391fb
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: JokerEye
     400000: //RootNode
-    2100000: Balance4
-    2100002: Wire4
-    2100004: Board4
-    2100006: Text4
+    400002: JokerEye
+    2100000: JokerFace
+    2100002: JokerTeeth
+    2100004: JokerNose
+    2100006: JokerHat
+    2100008: JokerHair
+    2100010: JokerEye
     2300000: //RootNode
+    2300002: JokerEye
     3300000: //RootNode
-    4300000: Scale4Left
+    3300002: JokerEye
+    4300000: Joker
+    4300002: JokerEye
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Balance4
-    second: {fileID: 2100000, guid: 105592e1c6a56ec4ea23dc22d91e78bf, type: 2}
+      name: JokerEye
+    second: {fileID: 2100000, guid: 4bbab191fbb255f4aa81fa4956bab415, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Board4
-    second: {fileID: 2100000, guid: 2478a5f06e8ff914285d1693f68d91ae, type: 2}
+      name: JokerFace
+    second: {fileID: 2100000, guid: 7f8c9c68ab645674cb303800ec235651, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Text4
-    second: {fileID: 2100000, guid: 68cb54a2af4195545a7bf0e6567497b7, type: 2}
+      name: JokerHair
+    second: {fileID: 2100000, guid: 7c50a7762dd9f534eb0c4ec7ea0eb5c0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wire4
-    second: {fileID: 2100000, guid: 8bb7aef61cfaef946a31fdea14ee6866, type: 2}
+      name: JokerHat
+    second: {fileID: 2100000, guid: 91b9b134bcb92374ba93b70eca150e8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JokerNose
+    second: {fileID: 2100000, guid: dc446ad07030f3340ab82ab17186a0db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JokerTeeth
+    second: {fileID: 2100000, guid: 6c3c190c7e14b0443b897ac86ca19165, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

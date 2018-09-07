@@ -2,6 +2,7 @@
 
 public class LightRoom : MonoBehaviour {
 
+    public GameObject triesText;
 	public Transform[] lights;
 	public static int tries = 0;
 
@@ -25,8 +26,16 @@ public class LightRoom : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col) {
-		if(!GameManager.solved[3] && col.CompareTag("Player"))
+		if(!GameManager.solved[3] && col.CompareTag("Player")){
 			tries++;
+            GameManager.tries[3] = tries;
+            triesText.SetActive(true);
+        }
 	}
+
+    void OnTriggerExit (Collider col) {
+        if(col.CompareTag("Player"))
+            triesText.SetActive(false);
+    }
 
 }

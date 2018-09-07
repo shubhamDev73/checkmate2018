@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class UI : MonoBehaviour {
 
 	public Transform cam, startPoint;
-	public TextMeshProUGUI ipText, usernameText, passwordText, idText, errorText, scoreText, timeText, instructionsText, gameElementsText;
+	public TextMeshProUGUI ipText, usernameText, passwordText, idText, errorText, scoreText, timeText, instructionsText, gameElementsText, triesText;
 	public GameObject skeleton, okButton, gameElements, instructionsScreen, instructionsKeyPrefab;
     public Transform instructionKeys;
     public PathMove game2;
@@ -36,7 +36,7 @@ public class UI : MonoBehaviour {
 		URL.password = passwordText.text;
         try{
             string result = URL.Request("register.php", "bitsid="+idText.text);
-            if(result == "register"){
+            if(result == "success"){
                 transform.GetChild(0).gameObject.SetActive(false);
                 move = true;
             }else if(result.Contains("login")){
@@ -51,10 +51,6 @@ public class UI : MonoBehaviour {
             errorText.text = "Wrong IP entered.";
             StartCoroutine(HideError());
         }
-
-        // DELETE THIS!!!
-        transform.GetChild(0).gameObject.SetActive(false);
-        move = true;
 	}
 
     IEnumerator HideError () {
@@ -124,7 +120,15 @@ public class UI : MonoBehaviour {
             gameElementsText.text = toSet.ToString();
     }
 
+    public void ShowTries (int n){
+        triesText.text = "Tries: "+n.ToString();
+    }
+
 	void Update () {
+        //bypassing server
+        if(!move && Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.Y))
+            URL.server = false;
+
         // updating UI elements
         if(game2.isPlaying)
             scoreText.text = "Cost: " + game2.cost.ToString();

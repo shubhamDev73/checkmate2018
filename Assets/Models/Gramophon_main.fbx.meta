@@ -11,18 +11,15 @@ ModelImporter:
     100010: Leg_02
     100012: Leg_03
     100014: Leg_04
-    100016: Light_Plane
-    100018: Musik_Disk
-    100020: needle_Head
-    100022: Platte
-    100024: Point.002
-    100026: Point.005
-    100028: t01
-    100030: t02
-    100032: t03
-    100034: t04
-    100036: t05
-    100038: 'Trumpet '
+    100016: Musik_Disk
+    100018: needle_Head
+    100020: Platte
+    100022: t01
+    100024: t02
+    100026: t03
+    100028: t04
+    100030: t05
+    100032: 'Trumpet '
     400000: Box
     400002: //RootNode
     400004: Handle
@@ -31,25 +28,21 @@ ModelImporter:
     400010: Leg_02
     400012: Leg_03
     400014: Leg_04
-    400016: Light_Plane
-    400018: Musik_Disk
-    400020: needle_Head
-    400022: Platte
-    400024: Point.002
-    400026: Point.005
-    400028: t01
-    400030: t02
-    400032: t03
-    400034: t04
-    400036: t05
-    400038: 'Trumpet '
+    400016: Musik_Disk
+    400018: needle_Head
+    400020: Platte
+    400022: t01
+    400024: t02
+    400026: t03
+    400028: t04
+    400030: t05
+    400032: 'Trumpet '
     2100000: Legs_mat
     2100002: BoxWood_mat
     2100004: Metal_mat
     2100006: Musik_disk_Mat_
     2100008: Musik_centre_Mat_
     2100010: trumpet _MAT
-    2100012: Material
     2300000: Box
     2300002: Handle
     2300004: Handle.001
@@ -57,16 +50,15 @@ ModelImporter:
     2300008: Leg_02
     2300010: Leg_03
     2300012: Leg_04
-    2300014: Light_Plane
-    2300016: Musik_Disk
-    2300018: needle_Head
-    2300020: Platte
-    2300022: t01
-    2300024: t02
-    2300026: t03
-    2300028: t04
-    2300030: t05
-    2300032: 'Trumpet '
+    2300014: Musik_Disk
+    2300016: needle_Head
+    2300018: Platte
+    2300020: t01
+    2300022: t02
+    2300024: t03
+    2300026: t04
+    2300028: t05
+    2300030: 'Trumpet '
     3300000: Box
     3300002: Handle
     3300004: Handle.001
@@ -74,16 +66,15 @@ ModelImporter:
     3300008: Leg_02
     3300010: Leg_03
     3300012: Leg_04
-    3300014: Light_Plane
-    3300016: Musik_Disk
-    3300018: needle_Head
-    3300020: Platte
-    3300022: t01
-    3300024: t02
-    3300026: t03
-    3300028: t04
-    3300030: t05
-    3300032: 'Trumpet '
+    3300014: Musik_Disk
+    3300016: needle_Head
+    3300018: Platte
+    3300020: t01
+    3300022: t02
+    3300024: t03
+    3300026: t04
+    3300028: t05
+    3300030: 'Trumpet '
     4300000: Leg_01
     4300002: Leg_03
     4300004: Leg_04
@@ -96,13 +87,10 @@ ModelImporter:
     4300018: t01
     4300020: needle_Head
     4300022: 'Trumpet '
-    4300024: Light_Plane
-    4300026: Platte
-    4300028: t04
-    4300030: t03
-    4300032: t05
-    10800000: Point.002
-    10800002: Point.005
+    4300024: Platte
+    4300026: t04
+    4300028: t03
+    4300030: t05
   externalObjects: {}
   materials:
     importMaterials: 1

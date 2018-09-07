@@ -4,32 +4,13 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Camera
-    100004: Hemi01
-    100006: Hemi02
-    100008: HuntersCabin
-    100010: HuntersCabin_LoD1
-    100012: Sun
     400000: //RootNode
-    400002: Camera
-    400004: Hemi01
-    400006: Hemi02
-    400008: HuntersCabin
-    400010: HuntersCabin_LoD1
-    400012: Sun
-    2000000: Camera
-    2100000: Bricks_01_Mat
-    2100002: PlanksWood_01_Mat
+    2100000: PlanksWood_01_Mat
+    2100002: Bricks_01_Mat
     2100004: RoofPlanks_01_Mat
-    2300000: HuntersCabin
-    2300002: HuntersCabin_LoD1
-    3300000: HuntersCabin
-    3300002: HuntersCabin_LoD1
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: HuntersCabin
-    4300002: HuntersCabin_LoD1
-    10800000: Hemi01
-    10800002: Hemi02
-    10800004: Sun
   externalObjects: {}
   materials:
     importMaterials: 1

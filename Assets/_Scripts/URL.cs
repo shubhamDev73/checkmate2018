@@ -8,24 +8,29 @@ public class URL {
 	public static string ip;
 	public static string username;
 	public static string password;
+    public static bool server = true;
 
 	public static string Request (string url, string extra) {
-		
-		HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://"+ip+"/"+url);
 
-		string rawData = "username="+username+"&password="+password+"&"+extra;
-		byte[] data = Encoding.ASCII.GetBytes(rawData);
-		request.Method = "POST";
-		request.ContentType = "application/x-www-form-urlencoded";
-		request.ContentLength = data.Length;
+        if(server){
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://"+ip+"/"+url);
 
-		request.GetRequestStream().Write(data, 0, data.Length);
+            string rawData = "username="+username+"&password="+password+"&"+extra;
+            byte[] data = Encoding.ASCII.GetBytes(rawData);
+            request.Method = "POST";
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = data.Length;
 
-		HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-		string result = new StreamReader(response.GetResponseStream()).ReadToEnd();
-		response.Close();
+            request.GetRequestStream().Write(data, 0, data.Length);
 
-		return result;
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            string result = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            response.Close();
+
+            return result;
+        }else{
+            return "success";
+        }
 	}
 
 }

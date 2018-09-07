@@ -7,8 +7,7 @@ public class Maze : MonoBehaviour {
 	public int maxMonkeyTurns;
     public bool isPlaying;
 	public bool pCanMoveRight, pCanMoveLeft, pCanMoveUp, pCanMoveDown, mCanMoveRight, mCanMoveLeft, mCanMoveUp, mCanMoveDown;
-    public GameObject cameraTopDown;
-    public GameObject originalCamera;
+    public GameObject cameraTopDown, originalCamera, triesText;
     public MazeWin mazeWin;
     public Canvas ui;
 	private bool chance;
@@ -26,12 +25,14 @@ public class Maze : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         if(col.CompareTag("Player") && !GameManager.solved[5]){
+            GameManager.tries[5] = mazeWin.tries;
             setIsPlaying(true);
         }
     }
 
     public void setIsPlaying(bool value)
     {
+        triesText.SetActive(value);
         if(value)
         {
             originalCamera.SetActive(false);
@@ -56,6 +57,7 @@ public class Maze : MonoBehaviour {
     void reset()
     {
         mazeWin.tries += 1;
+        GameManager.tries[5] = mazeWin.tries;
         player.position = playerInit;
         monkey.position = monkeyInit;
         Start();

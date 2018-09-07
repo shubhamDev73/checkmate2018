@@ -2,6 +2,7 @@
 
 public class GameManager : MonoBehaviour {
 
+    public UI ui;
     public static Solved solved;
     public static Tries tries; //NOTE TRIES[2] SIGNIFIES COST IN THAT GAME
     public static int temp2, temp6; //temp values for game 2 and 6
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour {
 		}
 		set{
 			_score = value;
-//			URL.Request("score.php", "score="+score);
+			URL.Request("score.php", "score="+score);
 		}
 	}
 
@@ -105,7 +106,15 @@ public class GameManager : MonoBehaviour {
         {
             get{return _tries[i];}
             set{_tries[i] = value;
-                // UI SHOW TRIES
+                // UI SHOW TRIES {3, 5}
+                switch(i){
+                    case 3:
+                        parent.ui.ShowTries(tries[i]);
+                        break;
+                    case 5:
+                        parent.ui.ShowTries(tries[i]);
+                        break;
+                }
             }
         }
     }

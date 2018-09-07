@@ -67,8 +67,10 @@ public class Balance : MonoBehaviour {
 	IEnumerator CalculateScale () {
 		int n = 0;
         transform.GetChild(0).eulerAngles = new Vector3(0, 0, (2 * _coins - totalCoins) * 0.5f);
-        transform.GetChild(0).GetChild(0).eulerAngles = new Vector3(0, 180, 0);
-        transform.GetChild(0).GetChild(1).eulerAngles = new Vector3(0, 180, 0);
+        transform.GetChild(0).GetChild(0).eulerAngles = Vector3.zero;
+        transform.GetChild(0).GetChild(1).eulerAngles = Vector3.zero;
+        transform.GetChild(0).GetChild(0).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + coins.ToString()));
+        transform.GetChild(0).GetChild(1).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + (totalCoins - coins).ToString()));
 		foreach(GameObject coin in GameObject.FindGameObjectsWithTag("Coin")){
 			if(n < coins) coin.GetComponent<Coin>().scale = transform.GetChild(0).GetChild(0);
 			else coin.GetComponent<Coin>().scale = transform.GetChild(0).GetChild(1);
@@ -81,7 +83,7 @@ public class Balance : MonoBehaviour {
             }else
                 skeleWon = true;
         }else if(_coins < totalCoins/2)
-            skeleWon= true;
+            skeleWon = true;
         yield return new WaitForSeconds(2);
         if(skeleWon)
             Reset();

@@ -86,13 +86,13 @@ public class PathMove : MonoBehaviour {
             if(paths[0] && paths[0].material.color == Color.white && Input.GetAxisRaw("Horizontal") > 0){
                 paths[0].material.color = Color.red;
                 paths[0] = null;
-                player.Translate(transform.right * -speed);
+                player.Translate(Vector3.right * speed);
                 cost -= 2;
             }
             if(paths[1] && paths[1].material.color == Color.white && Input.GetAxisRaw("Horizontal") < 0){
                 paths[1].material.color = Color.red;
                 paths[1] = null;
-                player.Translate(transform.right * speed);
+                player.Translate(Vector3.left * speed);
                 cost += 2;
             }
         }
@@ -100,13 +100,13 @@ public class PathMove : MonoBehaviour {
             if(paths[2] && paths[2].material.color == Color.white && Input.GetAxisRaw("Vertical") > 0){
                 paths[2].material.color = Color.red;
                 paths[2] = null;
-                player.Translate(transform.forward * -speed);
+                player.Translate(Vector3.forward * speed);
                 cost *= 2;
             }
             if(paths[3] && paths[3].material.color == Color.white && Input.GetAxisRaw("Vertical") < 0){
                 paths[3].material.color = Color.red;
                 paths[3] = null;
-                player.Translate(transform.forward * speed);
+                player.Translate(Vector3.back * speed);
                 cost /= 2;
             }
         }

@@ -11,8 +11,8 @@ ModelImporter:
     400002: Plane.001
     400004: //RootNode
     400006: rabo
-    2100000: Material
-    2100002: rabo
+    2100000: rabo
+    2100002: Material
     2100004: calabaza.001
     2300000: calabaza
     2300002: Plane.001
@@ -20,8 +20,8 @@ ModelImporter:
     3300000: calabaza
     3300002: Plane.001
     3300004: rabo
-    4300000: Plane.001
-    4300002: rabo
+    4300000: rabo
+    4300002: Plane.001
     4300004: calabaza
   externalObjects: {}
   materials:

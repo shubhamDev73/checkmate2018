@@ -40,9 +40,7 @@ public class TextOnUI : MonoBehaviour {
                 break;
             case 4:
                 if(GetComponent<Balance>().chance){
-                    transform.GetChild(0).GetChild(0).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + n.ToString()));
-                    transform.GetChild(0).GetChild(1).GetComponent<Renderer>().materials[3].SetTexture("_EmissionMap", Resources.Load<Texture2D>("Label3_" + (GetComponent<Balance>().totalCoins - n).ToString()));
-                    GetComponent<Balance>().coins = n;
+                    GetComponent<Balance>().coins -= n;
                 }
                 break;
         }

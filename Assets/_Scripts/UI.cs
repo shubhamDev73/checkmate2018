@@ -1,12 +1,12 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using UnityEngine.EventSystems;
 
 public class UI : MonoBehaviour {
 
 	public Transform cam, startPoint;
-	public Text ipText, usernameText, passwordText, idText, scoreText, timeText, instructionsText, gameElementsText;
+	public TextMeshProUGUI ipText, usernameText, passwordText, idText, scoreText, timeText, instructionsText, gameElementsText;
 	public GameObject skeleton, okButton;
 	private bool move = false;
 	private string[] allTexts = new string[6];
@@ -71,7 +71,7 @@ public class UI : MonoBehaviour {
 			cam.position = startPoint.position;
 			Cursor.visible = false;
 			Time.timeScale = 1;
-			DisplayText(0);
+//			DisplayText(0);
 			transform.GetChild(1).gameObject.SetActive(true);
 			move = false;
 		}
@@ -79,7 +79,7 @@ public class UI : MonoBehaviour {
 
 	void FixedUpdate () {
 		scoreText.text = "Score: " + GameManager.score.ToString();
-		timeText.text = "Time: " + Mathf.Floor(timer/3600).ToString() + "h " + (Mathf.Floor(timer/60)%60).ToString() + "m " + Mathf.Floor(timer%60).ToString() + "s";
+		timeText.text = Mathf.Floor(timer/3600).ToString() + "h " + (Mathf.Floor(timer/60)%60).ToString() + "m " + Mathf.Floor(timer%60).ToString() + "s";
 		timer -= Time.fixedDeltaTime;
 	}
 

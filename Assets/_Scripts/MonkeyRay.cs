@@ -4,10 +4,10 @@ public class MonkeyRay : MonoBehaviour {
 
     public GameObject crosshair;
 
-    private bool canCast;
+    public bool canCast;
 
 	void Update () {
-        if(!GameManager.solved[1] && canCast && Input.GetButtonDown("Click") && !GetComponent<ShowInstructions>().instructions.activeSelf)
+        if(!GameManager.solved[1] && canCast && Input.GetButtonDown("Click"))// && !GetComponent<ShowInstructions>().instructions.activeSelf)
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

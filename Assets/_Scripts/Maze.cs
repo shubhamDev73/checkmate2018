@@ -32,7 +32,7 @@ public class Maze : MonoBehaviour {
 
     public void setIsPlaying(bool value)
     {
-        triesText.SetActive(value);
+        // triesText.SetActive(value);
         if(value)
         {
             originalCamera.SetActive(false);

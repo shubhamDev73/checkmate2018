@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
@@ -19,12 +20,22 @@ public class GameManager : MonoBehaviour {
 	}
 
     void Start () {
-        tries = new Tries(6, this);
+        temp2 = temp6 =0;
+        tries = new Tries(15, this);
         // 6 is the no. of minigames
-        solved = new Solved(6, this);
+        solved = new Solved(15, this);
 		_score = 0;
 		Time.timeScale = 0;
 	}
+
+    public static IEnumerator IncrementScoreEveryMin()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(60);
+            score++;
+        }
+    }
 
     int Fib(int j)
     {
@@ -49,20 +60,20 @@ public class GameManager : MonoBehaviour {
                 score -= temp2;
                 score += 400 - 6*tries[2];
                 temp2 = 400 - 6*tries[2];
-                if(tries[2] <= 0){        //!!!NOTE TRIES[2] SIGNIFIES COST IN THAT GAME!!!
-                    score+= 200;
-                    temp2 += 200;
-                }
-                else if(tries[2] <=10)
-                {
-                    score +=100;
-                    temp2 += 100;
-                }
-                else if(tries[2] <= 50)
-                {
-                    score += 50;
-                    temp2 += 50;
-                }
+                // if(tries[2] <= 0){        //!!!NOTE TRIES[2] SIGNIFIES COST IN THAT GAME!!!
+                //     score+= 200;
+                //     temp2 += 200;
+                // }
+                // else if(tries[2] <=10)
+                // {
+                //     score +=100;
+                //     temp2 += 100;
+                // }
+                // else if(tries[2] <= 50)
+                // {
+                //     score += 50;
+                //     temp2 += 50;
+                // }
 
                 break;
             case 3:
@@ -75,7 +86,24 @@ public class GameManager : MonoBehaviour {
                 score += 1000 - 4*(tries[5]);
                 break;
             case 6:
-
+                foreach(Hook hook in FindObjectsOfType<Hook>())
+                {
+                    if(!hook.occupied)
+                        return;
+                }
+                int torque = FindObjectOfType<RodCast>().calculateRotationOfAllBalances();
+                score -= temp6 ;
+                score += Mathf.Clamp(500 - 10*torque,3,500);
+                temp6 = Mathf.Clamp(500 - 10*torque,3,500);
+                break;
+            case 7:
+                score += 15;
+                break;
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+                score += Mathf.Clamp(100 - 10*tries[i], 5, 100);
                 break;
         }
     }

@@ -11,6 +11,7 @@ public class Hook : MonoBehaviour {
         weight.transform.position = transform.GetChild(0).position;
         weight.transform.SetParent(transform);
         occupied = true;
+        GameManager.solved[6] = true;
     }
     public RodBalance detach()
     {

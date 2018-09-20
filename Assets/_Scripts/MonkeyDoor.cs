@@ -20,7 +20,9 @@ public class MonkeyDoor : MonoBehaviour {
             _isOpen = value;
             if(_isOpen)
             {
-                anim.SetBool("open", true);
+                Debug.Log("Casting");
+                transform.GetChild(1).localEulerAngles = new Vector3(0,-70,0);
+                //anim.SetBool("open", true);
                 if(WinCheck(doorId)){
                     monkeyIsIn[doorId] = false;
                     GameManager.tries[1] = tries;
@@ -31,7 +33,8 @@ public class MonkeyDoor : MonoBehaviour {
             }
             else
             {
-                anim.SetBool("open", false);
+                //anim.SetBool("open", false);
+                transform.GetChild(1).localEulerAngles = new Vector3(0,0,0);
                 MonkeyUpdate(doorId);
             }
         }
@@ -46,13 +49,10 @@ public class MonkeyDoor : MonoBehaviour {
 
     IEnumerator CloseDelay()
     {
-        Debug.Log("Starting coroutine");
         yield return new WaitForSeconds(1);
-        Debug.Log("Waiting for player to exit");
         while(playerNear){
             yield return null;
         }
-        Debug.Log("Exiting Coroutine");
         isOpen = false;
     }
     void OnDisable()

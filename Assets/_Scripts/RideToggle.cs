@@ -16,7 +16,7 @@ public class RideToggle : MonoBehaviour {
             _onRide = value;
             if(_onRide)
             {
-                playerLastY = player.position.y;
+                playerLastY = 1;//player.position.y;
                 my_col.enabled = false;
 
             }

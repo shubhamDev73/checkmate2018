@@ -15,14 +15,13 @@ public class RodCast : MonoBehaviour {
     }
     public RodBalance []rodArray;
     public int torque;
-    int calculateRotationOfAllBalances()
+    public int calculateRotationOfAllBalances()
     {
         int temp = 0;
         foreach(RodBalance rod in rodArray)
         {
             StartCoroutine(rod.calculateRotation());
-            Debug.Log(rod.gameObject.name);
-            temp +=rod.torque;
+            temp +=Mathf.Abs(rod.torque);
         }
         return temp;
     }
@@ -34,7 +33,7 @@ public class RodCast : MonoBehaviour {
                 if(!equipped){
                     RaycastHit hit;
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    if(Physics.Raycast(ray, out hit, 10, 1<<10)){
+                    if(Physics.Raycast(ray, out hit, 50, 1<<10)){
                         if(hit.collider.CompareTag("Hook") && hit.collider.GetComponent <Hook>().occupied)
                         {
                             equipped = hit.collider.GetComponent <Hook>().detach();
@@ -42,7 +41,7 @@ public class RodCast : MonoBehaviour {
                             return;
                         }
                     }
-                    if(!equipped && Physics.Raycast(ray, out hit, 10, 1<<11))
+                    if(!equipped && Physics.Raycast(ray, out hit, 50, 1<<11))
                     {
                         if(hit.collider.CompareTag("Weight") && hit.collider.GetComponent <RodBalance>().equipable)
                         {
@@ -54,7 +53,7 @@ public class RodCast : MonoBehaviour {
                 {
                     RaycastHit hit;
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    if(Physics.Raycast(ray, out hit, 10))
+                    if(Physics.Raycast(ray, out hit, 50))
                     {
                         if(hit.collider.CompareTag("Hook") && !hit.collider.GetComponent <Hook>().occupied)
                         {

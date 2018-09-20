@@ -60,6 +60,10 @@ public class BullRide : MonoBehaviour {
         bullUI.transform.GetChild(nextChoice).gameObject.SetActive(true);
         currentDelay /= 1.2f;
         currentDelay = Mathf.Clamp(currentDelay,0.5f,delay);
+        if(currentDelay == 0.5f && !GameManager.solved[7])
+        {
+            GameManager.solved[7] = true;
+        }
         return currentDelay;
     }
 	void Update () {

@@ -13,9 +13,9 @@ public class URL {
 	public static string Request (string url, string extra) {
 
         if(server){
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://"+ip+"/"+url);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://"+ip.Trim()+"/"+url);
 
-            string rawData = "username="+username+"&password="+password+"&"+extra;
+            string rawData = "username="+username.Trim()+"&password="+password.Trim()+"&"+extra.Trim();
             byte[] data = Encoding.ASCII.GetBytes(rawData);
             request.Method = "POST";
             request.ContentType = "application/x-www-form-urlencoded";

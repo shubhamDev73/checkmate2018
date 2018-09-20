@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 6c9b976419969467c970f1d24d194799
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Allumeur
+    100002: Base lampe
+    100004: BezierCurve.001
+    100006: Bouchon
+    100008: Bouchon.001
+    100010: Camera focus
+    100012: Empty mirror
+    100014: Hanses
+    100016: Haut lampe
+    100018: Haut lampe.001
+    100020: Levier
+    100022: Light up
+    100024: Light up 2
+    100026: "M\xE8che"
+    100028: //RootNode
+    100030: Plane
+    100032: Sphere
+    100034: Support verre
+    100036: Verre
+    400000: Allumeur
+    400002: Base lampe
+    400004: BezierCurve.001
+    400006: Bouchon
+    400008: Bouchon.001
+    400010: Camera focus
+    400012: Empty mirror
+    400014: Hanses
+    400016: Haut lampe
+    400018: Haut lampe.001
+    400020: Levier
+    400022: Light up
+    400024: Light up 2
+    400026: "M\xE8che"
+    400028: //RootNode
+    400030: Plane
+    400032: Sphere
+    400034: Support verre
+    400036: Verre
+    2100000: Light
+    2100002: Haut lampe 1
+    2100004: Rust Vis
+    2100006: "M\xE8che.001"
+    2100008: "M\xE8che"
+    2100010: "Porte m\xE8che"
+    2100012: Rust 2
+    2100014: "Molette r\xE9glage"
+    2100016: Levier
+    2100018: Bouchon + vis
+    2100020: Armature verre
+    2100022: Verre
+    2100024: Haut lampe 2
+    2100026: Anses
+    2100028: Rust Base avec marque
+    2300000: Allumeur
+    2300002: Base lampe
+    2300004: BezierCurve.001
+    2300006: Bouchon
+    2300008: Bouchon.001
+    2300010: Hanses
+    2300012: Haut lampe
+    2300014: Haut lampe.001
+    2300016: Levier
+    2300018: Light up
+    2300020: Light up 2
+    2300022: "M\xE8che"
+    2300024: Plane
+    2300026: Sphere
+    2300028: Support verre
+    2300030: Verre
+    3300000: Allumeur
+    3300002: Base lampe
+    3300004: BezierCurve.001
+    3300006: Bouchon
+    3300008: Bouchon.001
+    3300010: Hanses
+    3300012: Haut lampe
+    3300014: Haut lampe.001
+    3300016: Levier
+    3300018: Light up
+    3300020: Light up 2
+    3300022: "M\xE8che"
+    3300024: Plane
+    3300026: Sphere
+    3300028: Support verre
+    3300030: Verre
+    4300000: Plane
+    4300002: Haut lampe.001
+    4300004: Bouchon.001
+    4300006: Light up 2
+    4300008: Light up
+    4300010: "M\xE8che"
+    4300012: Sphere
+    4300014: BezierCurve.001
+    4300016: Allumeur
+    4300018: Levier
+    4300020: Bouchon
+    4300022: Support verre
+    4300024: Verre
+    4300026: Haut lampe
+    4300028: Hanses
+    4300030: Base lampe
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

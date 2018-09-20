@@ -2,23 +2,10 @@
 
 public class LightRoom : MonoBehaviour {
 
+    public GameObject triesText;
 	public Transform[] lights;
-
-
 	public static int tries = 0;
 
-    int fib(int n){
-        int a =0;
-        int b =1;
-        int temp = 0;
-        for(int i=0; i<n;++i)
-        {
-            temp = b;
-            b = b+a;
-            a = temp;
-        }
-        return a;
-    }
 	void Update () {
 		if(GameManager.solved[3])
 			return;
@@ -31,15 +18,24 @@ public class LightRoom : MonoBehaviour {
 				}
 			}
 			if(done){
-				GameManager.score += (400 - 3*fib(tries));
+                GameManager.tries[3] = tries;
 				GameManager.solved[3] = true;
+
 			}
 		}
 	}
 
 	void OnTriggerEnter (Collider col) {
-		if(!GameManager.solved[3] && col.CompareTag("Player"))
+		if(!GameManager.solved[3] && col.CompareTag("Player")){
 			tries++;
+            GameManager.tries[3] = tries;
+            triesText.SetActive(true);
+        }
 	}
+
+    void OnTriggerExit (Collider col) {
+        if(col.CompareTag("Player"))
+            triesText.SetActive(false);
+    }
 
 }

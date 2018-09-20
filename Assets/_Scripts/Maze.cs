@@ -7,17 +7,15 @@ public class Maze : MonoBehaviour {
 	public int maxMonkeyTurns;
     public bool isPlaying;
 	public bool pCanMoveRight, pCanMoveLeft, pCanMoveUp, pCanMoveDown, mCanMoveRight, mCanMoveLeft, mCanMoveUp, mCanMoveDown;
-    public GameObject camera;
-    public GameObject mainCamera;
-    public float sensitivity;
+    public GameObject cameraTopDown, originalCamera, triesText;
+    public MazeWin mazeWin;
+    public Canvas ui;
 	private bool chance;
     private bool buttonChangedX , buttonChangedY;
 	private int monkeyTurnsLeft;
 	private Vector3 playerInit, monkeyInit;
 	void Start () {
 		chance = true;
-//		pCanMoveRight = pCanMoveLeft = pCanMoveUp = pCanMoveDown = true;
-//		mCanMoveRight = mCanMoveLeft = mCanMoveUp = mCanMoveDown = true;
 		playerInit = player.position;
 		monkeyInit = monkey.position;
 		monkeyTurnsLeft = maxMonkeyTurns;
@@ -26,24 +24,28 @@ public class Maze : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.CompareTag("Player")){
+        if(col.CompareTag("Player") && !GameManager.solved[5]){
+            GameManager.tries[5] = mazeWin.tries;
             setIsPlaying(true);
         }
     }
 
     public void setIsPlaying(bool value)
     {
+        // triesText.SetActive(value);
         if(value)
         {
-            mainCamera.SetActive(false);
-            camera.SetActive(true);
+            originalCamera.SetActive(false);
+            cameraTopDown.SetActive(true);
+            ui.worldCamera = cameraTopDown.GetComponent<Camera>();
             isPlaying = true;
         }
         else
         {
-            camera.SetActive(false);
-            mainCamera.SetActive(true);
-            mainCamera.transform.position = new Vector3(exitLocation.position.x, mainCamera.transform.position.y, exitLocation.position.z);
+            cameraTopDown.SetActive(false);
+            originalCamera.SetActive(true);
+            ui.worldCamera = cameraTopDown.GetComponent<Camera>();
+            originalCamera.transform.position = new Vector3(exitLocation.position.x, originalCamera.transform.position.y, exitLocation.position.z);
             isPlaying = false;
             reset();
         }
@@ -54,12 +56,14 @@ public class Maze : MonoBehaviour {
     }
     void reset()
     {
+        mazeWin.tries += 1;
+        GameManager.tries[5] = mazeWin.tries;
         player.position = playerInit;
         monkey.position = monkeyInit;
         Start();
     }
 	void Update () {
-        if(isPlaying){
+        if(isPlaying && !GetComponent<ShowInstructions>().instructions.activeSelf){
             if(Input.GetButtonDown("Reset")){
                 reset();
                 return;

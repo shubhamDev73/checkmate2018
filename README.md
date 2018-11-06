@@ -1,9 +1,9 @@
 # Checkmate 2018
 
 This is the repo for the game for BITS-ACM event Checkmate, 2018. It contains interactive puzzles which one needs to solve in order to gain points. Checkmate was an official BITS-ACM Event conducted in IPC, BITS Pilani on 8th September, 2018. It was a successful event, with more than 200 participants. Everyone received a certificate with their scores, and the winners got a cash prize of 6000 INR. The game was built on Unity Game Engine, and uses C# as the scripting language, with 3D Modelling done in Blender. The game is free for all, and we are grateful to Unity and Blender to allow us free softwares to build this game. For any further queries, you may directly contact any of us:
-[@shubhamDev73](github.com/shubhamDev73)
-[@coolsidd](github.com/coolsidd)
-[@7vik](github.com/7vik)
+[@shubhamDev73](http://github.com/shubhamDev73)
+[@coolsidd](http://github.com/coolsidd)
+[@7vik](http://github.com/7vik)
 @sharifa
 @varsha
 @aman

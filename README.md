@@ -4,8 +4,8 @@ This is the repo for the game for BITS-ACM event Checkmate, 2018. It contains in
 [@shubhamDev73](http://github.com/shubhamDev73)
 [@coolsidd](http://github.com/coolsidd)
 [@7vik](http://github.com/7vik)
-@sharifa
-@varsha
+[@sharifa](https://github.com/sharifa2708)
+[@varsha](https://github.com/VarshaSinghania)
 @aman
 
 ## Bugs Remaining:-
